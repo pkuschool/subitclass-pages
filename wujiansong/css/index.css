@@ -1,0 +1,134 @@
+body{
+    /* border: 25px; */
+    background-color: #230f0f;
+    font-family: BlinkMacSystemFont, '思源宋体', 'Microsoft Yahei UI', sans-serif, monospace;
+    background-image: url("../img/bg-img.jpeg");/*图片来源于网络*/
+    background-attachment: fixed;
+    min-height: calc(100vh - 100px);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    margin: 0;
+}
+@font-face {
+    font-family: "字酷堂清楷体";
+    src: url("../font/字酷堂清楷体.ttf");/*感谢朱文鹤学长提供的字体*/
+}
+header{
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    width: 350px;
+    height: 80px;
+    flex-flow: column;
+}
+h1{
+    font-size:45px;
+    font-family: "Fira Code Light",sans-serif;
+    color: #ffffff;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+/*
+.text-p{
+    text-align: center;
+    color: rgb(28, 187, 253);
+    font-size: 5px;
+    font-family: 华文新魏,serif;
+}
+*/
+.line{
+    margin: 0 auto;
+    height: 10px;
+    max-width: 500px;
+    border-top: 1px solid #f8f7f7;
+    animation: 12s line-moving infinite;
+    position: relative;
+    z-index: -1;
+}
+.line:link,.line:visited{
+    max-width: 500px;
+}
+.line:hover,.line:active{
+    max-width: 100px
+}
+
+.table-element{
+    table-layout: fixed;
+    tab-size: 90px;
+}
+.table-ul{
+    alignment: center;
+    color: #003dfc;
+    width: 800px;
+    height: 500px;
+    margin-left: 20vw;
+}
+.table-ul-element-img{
+    display: flex;
+    position: center;
+    width: 430px;
+    height: 430px;
+    border-top-left-radius: 2.25em 4.5em;
+    border-top-right-radius: 4em 6em;
+    border-bottom-right-radius: 2.75em 5.5em;
+    border-bottom-left-radius: 2em 6em;
+}
+.table-ul-element-text{
+    outline-style: groove;
+}
+#table-ul-head{
+    font-size: 20px;
+}
+.article{
+    margin: 0 auto;
+    text-align: center;
+    padding-right: 20em;
+    padding-left: 20em;
+    background-color: rgba(52, 108, 156, 0.38);
+    color: #eef1cc;
+}
+.div-both{
+    display: flex;
+    align-items: flex-end;
+    flex-flow: row;
+    justify-content: space-around;
+    /* background-color: #ffffff50; */
+}
+.div-poem{
+    margin: 0 auto;
+    /* padding: 40px;
+    border: 40px;
+    background: rgba(199, 199, 199, 0.47); */
+    color: azure;
+    border-radius: 1em;
+    font-family: "字酷堂清楷体", serif;
+    text-align: center;
+    font-size: 25px;
+}
+/* .div-right{
+    margin: 0 auto;
+    padding: 40px;
+    border: 40px;
+    background: rgba(199, 199, 199, 0.47);
+    color: azure;
+    border-radius: 1em;
+} */
+.column-line{
+    height: 850px;
+    width: 10px;
+    transform: scaleY(0.9);
+    border-left: 1px solid #f8f7f78e;
+    margin: 0 auto;
+}
+@keyframes line-moving {
+    0%{
+        transform: translateX(-400px);
+    }
+    50%{
+        transform: translateX(400px);
+    }
+    100%{
+        transform: translateX(-400px);
+    }
+}
+

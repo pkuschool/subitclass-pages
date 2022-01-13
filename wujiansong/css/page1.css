@@ -1,0 +1,133 @@
+body{
+    background-color: rgba(200, 250, 248, 0.84);
+    border: 0;
+    margin: 0;
+    background-image: url("../img/bg-img.jpeg");
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+h1{
+    font-size:45px;
+    font-family: "等线 Light", serif;
+    color: #ffffff;
+}
+.table-element{
+    table-layout: fixed;
+    tab-size: 90px;
+    text-align: center;
+}
+#img-l{
+    display: flex;
+    position: center;
+    margin: 0 auto;
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+}
+#table-head{
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.table-element-plus{
+    color: white;
+    width: 400px;
+    padding: 10px;
+    margin: 0 auto;
+}
+.div-table{
+    margin: 0 auto;
+    border: 70px;
+    padding: 70px;
+}
+
+.modal_float{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    visibility: hidden;
+}
+.modal_content{
+    position: absolute;
+    left: 50%;
+    top: 18%;
+    transform: translate(-50%, -50%);
+    width: 24rem;
+    background-color: #9ff1f1;
+    border-radius: 0.5em;
+    padding: 0.4em 1em;
+}
+.modal_show{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+.modal_use{
+    float: right;
+    color: aliceblue;
+}
+.modal_use:hover{
+    color: black;
+    cursor: pointer;
+}
+/*Copyright：modal_float, modal_content, modal_show, modal_use与modal_use:hover的原型来自https://www.bilibili.com/video/BV1pF411h78w，但均已爆改*/
+
+
+#modal_button{
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2ba3b8);
+    background-image: -moz-linear-gradient(top, #3498db, #2ba3b8);
+    background-image: -ms-linear-gradient(top, #3498db, #2ba3b8);
+    background-image: -o-linear-gradient(top, #3498db, #2ba3b8);
+    background-image: linear-gradient(to bottom, #3498db, #2ba3b8);
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    text-shadow: 0 0 30px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+    border: solid #1f628d 2px;
+    text-decoration: none;
+}
+
+#modal_button:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #6e34d9);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #6e34d9);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #6e34d9);
+    background-image: -o-linear-gradient(top, #3cb0fd, #6e34d9);
+    background-image: linear-gradient(to bottom, #3cb0fd, #6e34d9);
+    text-decoration: none;
+}
+form .search{
+    width: 90px;
+    height: 30px;
+    border: 0;
+    outline: none;
+    text-align: center;
+    font-size:16px;
+    background-color: #346c9c;
+    color: #9ff1f1;
+    border-radius: 2em;
+}
+form .input_item{
+    display: inline-flex;
+    width: 260px;
+    height: 35px;
+    font-size: 16px;
+    outline: none;
+    border: 2px solid #3cb0fd;
+}
+
+.az{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

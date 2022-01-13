@@ -1,0 +1,17 @@
+body{
+    border: 0;
+    margin: 0;
+    background-image: url("../img/bg-img.jpeg");
+    background-attachment: fixed;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+.div-thanks{
+    display: flex;
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+
+}

@@ -1,0 +1,75 @@
+nav{
+    /*max-width: 1865px;*/
+    max-width: 1700px;
+    margin: 0 auto;
+    max-height: 70px;
+    height: 70px;
+    line-height:50px;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+}
+a:link,a:visited{
+    display: block;
+    width: 200px;
+    height: 53px;
+    font-weight: bold;
+    color: #93b5cf;
+    background-color: #346c9c;
+    text-align: center;
+    padding: 8px;
+    text-transform: none;
+    /*border-top-left-radius: 5em 5em;
+    border-top-right-radius: 5em 5em;
+    border-bottom-left-radius: 5em 5em;
+    border-bottom-right-radius: 5em 5em;*/
+}
+
+@media (max-width: 1200px) {
+    a:link,a:visited{
+        width: auto !important;
+    }
+}
+@media (max-width: 1000px) {
+    a:link,a:visited{
+        width: auto !important;
+    }
+}
+
+a:hover,a:active{
+    background-color: #132c33;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    top: 10px;
+    display: flex;
+    background-color: #346c9c;
+    border: 0;
+    border-radius: 0 0 15px 15px;
+    margin: 0;
+    padding-inline-start: 0; /* fixes an UA issue*/
+    justify-content:center;/*Attributes that controls ALL flex child elements are placed on the father element*/
+}
+nav ul li{
+    float: none;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 2;
+}
+
+nav li p{
+    display: block;
+    text-decoration: none;
+    margin: 0 auto;
+    height: 70px;
+
+}
+.search{
+
+}

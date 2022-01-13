@@ -1,0 +1,81 @@
+body{
+    border: 0;
+    margin: 0;
+    background-image: url("../img/bg-img.jpeg");
+    background-attachment: fixed;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);/*来自魏子峰的提醒*/
+    box-sizing: border-box;
+}
+.article-items{
+    border: 10px;
+    padding: 30px 100px;
+    margin: 30px 500px;
+    background-color: rgba(28, 187, 253, 0.16);
+    color: azure;
+    border-radius: 1em;
+    text-align: center;
+    overflow: hidden;
+    line-height: 40px;
+}
+.div-article{
+    display: flex;
+    flex-flow: column wrap;
+    overflow: hidden;
+}
+
+@media (max-width: 1740px) {
+    .article-items{
+        border: 10px;
+        padding: 30px 100px;
+        margin: 30px 200px;
+        background-color: rgba(28, 187, 253, 0.16);
+        color: azure;
+        border-radius: 1em;
+        text-align: center;
+    }
+}
+@media (max-width: 1440px) {
+    .article-items{
+        border: 10px;
+        padding: 30px 100px;
+        margin: 30px 200px;
+        background-color: rgba(28, 187, 253, 0.16);
+        color: azure;
+        border-radius: 1em;
+        text-align: center;
+    }
+}
+@media (max-width: 1200px) {
+    .article-items{
+        border: 10px;
+        padding: 30px 100px;
+        margin: 30px 180px;
+        background-color: rgba(28, 187, 253, 0.16);
+        color: azure;
+        border-radius: 1em;
+        text-align: center;
+    }
+}
+@media (max-width: 1024px) {
+    .article-items{
+        border: 10px;
+        padding: 30px 100px;
+        margin: 30px 160px;
+        background-color: rgba(28, 187, 253, 0.16);
+        color: azure;
+        border-radius: 1em;
+        text-align: center;
+    }
+}
+@media (max-width: 440px) {
+    .article-items{
+        border: 10px;
+        padding: 30px 100px;
+        margin: 30px 800px;
+        background-color: rgba(28, 187, 253, 0.16);
+        color: azure;
+        border-radius: 1em;
+        text-align: center;
+    }
+}
