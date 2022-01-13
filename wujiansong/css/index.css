@@ -11,7 +11,7 @@ body{
 }
 @font-face {
     font-family: "字酷堂清楷体";
-    src: url("../font/字酷堂清楷体.ttf");/*感谢朱文鹤学长提供的字体*/
+    src: url("../font/字酷堂清楷体.subset.ttf");/*感谢朱文鹤学长提供的字体*/
 }
 header{
     display: flex;
