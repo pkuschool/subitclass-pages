@@ -1,0 +1,219 @@
+
+@font-face {
+  font-family: 'fzboyasongs-gbregular';
+  src: url('../font/webfontkit-20211125-023548/fzbysjw.woff2') format('woff2'),
+       url('../font/webfontkit-20211125-023548/fzbysjw.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'fzwenzhengmingxingcaosregular';
+  src: url('../font/webfontkit-20211209-011810/fzwenzmxcjw.woff2') format('woff2'),
+       url('../font/webfontkit-20211209-011810/fzwenzmxcjw.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*
+导航栏
+*/
+
+.headline{
+  cursor: url('../img/iconwcnm.png'), pointer;
+  background-blend-mode: darken;
+  background-color: hsla(0, 0%, 100%, 0.281);
+  margin-left: 0px;
+  margin-right: 0px;
+  padding:0px;
+  position: fixed;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.icon{
+  padding: 15px 0px;
+}
+
+.icon img{
+  vertical-align: top;
+  display: inline-block;
+}
+
+.button1 {
+  background-blend-mode: darken;
+  background-color:hsla(0, 0%, 100%, 0);
+  padding: 15px 32px;
+  color:black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0px 0px;
+  cursor: url('../img/iconwcnm.png'), pointer;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+}
+
+.button1:hover {
+  display: inline-block;
+  background-color: gainsboro; 
+  color: black;
+  margin: 0px 0px;
+  cursor: url('../img/iconwcnm.png'), pointer;
+}
+  
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none ;
+  position: absolute;
+  background-color: hsla(0, 0%, 100%, 0.481);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  font-size: 14px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: gainsboro}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+body{
+  cursor: url('../img/iconwcnm.png'), pointer;
+}
+
+p{
+  color:dimgray;
+  font-family:'fzboyasongs-gbregular';
+  text-align: center;
+  padding: 30px;
+}
+
+.picture{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  color: black;
+  font-family: 'fzboyasongs-gbregular';
+  text-align: center;
+  text-decoration: none;
+  cursor: url('../img/iconwcnm.png'), pointer;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+h1{
+    background-color: dimgray;
+    color: ghostwhite;
+    font-family:'fzboyasongs-gbregular';
+    text-align: center;
+}
+
+h2{
+  color: dimgray;
+  font-family:'fzboyasongs-gbregular';
+  text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200,200,200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    margin: 0 auto;
+  }
+
+tbody {
+    font-size: 90%;
+    font-style: italic;
+  }
+  
+  tfoot {
+    font-weight: bold;
+  }
+
+  td, th {
+    border: 1px solid rgb(190,190,190);
+    padding: 10px 20px;
+  }
+
+  /*
+尾栏
+*/
+
+/*
+尾栏
+*/
+
+.footer{
+  background-image: linear-gradient(to bottom , #ffffff00,#ffffff7a);
+  font-size:0px;
+  margin: 0px 0px;
+  bottom:0;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+}
+
+.button2 {
+  background-blend-mode: darken;
+  background-color:hsla(0, 0%, 100%, 0);
+  padding: 2% 0px;
+  width:25%;
+  color:black;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  margin: 0px 0px;
+  cursor: url('../img/iconwcnm.png'), pointer;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  overflow-y: scroll;
+  float: left;
+}
+
+.button2:hover {
+  float: left;
+  display: block;
+  background-image: linear-gradient(to bottom , #ffffff00,#ffffff9a);
+  color: black;
+  text-align: center;
+  margin: 0px 0px;
+  cursor: url('../img/iconwcnm.png'), pointer;
+  overflow-y: scroll;
+}

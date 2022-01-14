@@ -1,0 +1,41 @@
+
+@font-face {
+    font-family: 'fzboyasongs-gbregular';
+    src: url('webfontkit-20211125-023548/fzbysjw.woff2') format('woff2'),
+         url('webfontkit-20211125-023548/fzbysjw.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    background-color: lightgrey;
+}
+
+h1{
+    background-color: dimgray;
+    color: ghostwhite;
+    font-family:'fzboyasongs-gbregular';
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200,200,200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+  }
+
+tbody {
+    font-size: 90%;
+    font-style: italic;
+  }
+  
+  tfoot {
+    font-weight: bold;
+  }
+
+  td, th {
+    border: 1px solid rgb(190,190,190);
+    padding: 10px 20px;
+  }

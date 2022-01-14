@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pyzzyp</title>
+    <link rel='stylesheet' href="xd.css">
+    <style type="text/css">
+        .solid{
+    border-style: groove;
+    border-width: thin;
+    border-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>无用史料堆积处的导航</h1>
+    <div class = 'solid'>
+        <p>
+            由于主页主人不知道博客应存放内容，而出于可持续应付作业之考虑，不想次次重写（？）故将个人平常无聊历史考证存放在这里
+            <br />
+            不负责任的预警：你会可能看到一些
+            <div class='test'>
+                <a href="" title="发言来自本人">奇奇怪怪的东西</a>
+                <div class="inner">
+                    <img src="01.jpg" width = '400px' height = '300px'>
+                </div>
+            <br />
+            </div>
+            <script>
+                var $ = function(id){
+                    return document.getElementById(id);
+                };
+                var $t = function(tag, cot){
+                    cot = cot || document;
+                    return cot.getElementsByTagName(tag);
+                };
+                $t('a')[0].onmouseover = function(){
+                    $t('div', this.parentNode)[0].style.display = 'block';
+                }
+                $t('a')[0].onmouseout = function(){
+                    $t('div', this.parentNode)[0].style.display = 'none';
+                }           
+            </script>
+            <br />
+        </p>
+        <p>
+            但主要用于应付作业，应该不会有太离谱的东西（吧？）……
+        </p>
+        <p class="text1">
+            快速导航：
+            <br />
+            <a href="归档/Untitled-1.html" class="button1">关于pyzzyp</a>
+            <br />
+            预警：里程碑2作业，和本页面画风严重不符
+            <br />
+            <a href="文章/01/Untitled-1.html" class="button2">关于秦晋河阳之战考</a>
+            <br />
+            预警：没写完，刚提出问题
+        </p>
+    </div>
+    <div class="footer">
+        <p class='qaq'>
+            <br />
+            我是一个底栏:
+            <br />
+            但我没有什么好说的。也许在更远的未来我会说些什么。
+        </p>
+    </div>
+</body>
+</html>

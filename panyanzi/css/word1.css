@@ -1,0 +1,238 @@
+
+/*
+字体设置
+*/
+
+@font-face {
+  font-family: 'fzboyasongs-gbregular';
+  src: url('../font/webfontkit-20211125-023548/fzbysjw.woff2') format('woff2'),
+       url('../font/webfontkit-20211125-023548/fzbysjw.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'fzwenzhengmingxingcaosregular';
+  src: url('../font/webfontkit-20211209-011810/fzwenzmxcjw.woff2') format('woff2'),
+       url('../font/webfontkit-20211209-011810/fzwenzmxcjw.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+全局统一设置
+*/
+
+p{
+  color:white;
+  font-family:'fzboyasongs-gbregular';
+  text-align: center;
+  padding: 30px;
+}
+
+a{
+  color:white;
+  font-family: 'fzboyasongs-gbregular';
+  text-align: center;
+  text-decoration: none;
+  cursor: url('../img/iconwcnm.png'), pointer;
+}
+
+/*
+导航栏
+*/
+
+.headline{
+  cursor: url('../img/iconwcnm.png'), pointer;
+  background-blend-mode: darken;
+  background-color: hsla(0, 0%, 100%, 0.281);
+  margin-left: 0px;
+  margin-right: 0px;
+  padding:0px;
+  position: fixed;
+  z-index: 2;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  color:rgb(200,200,200);
+}
+
+li a, .dropbtn {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.icon{
+  padding: 15px 0px;
+}
+
+.icon img{
+  vertical-align: top;
+  display: inline-block;
+}
+
+.button1 {
+  background-blend-mode: darken;
+  background-color:hsla(0, 0%, 100%, 0);
+  padding: 15px 32px;
+  color:white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0px 0px;
+  cursor: url('../img/iconwcnm.png'), pointer;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+}
+
+.button1:hover {
+  display: inline-block;
+  background-color: gainsboro; 
+  color:black;
+  margin: 0px 0px;
+  cursor: url('../img/iconwcnm.png'), pointer;
+}
+  
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none ;
+  position: absolute;
+  background-color: hsla(0, 0%, 100%, 0.281);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  font-size: 14px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: gainsboro;
+  color:black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*
+背景
+*/
+
+body{
+  background: url("../img/background1.jpg") no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -o-background-size: cover;                
+          background-size: cover;
+          cursor: url('../img/iconwcnm.png'), pointer;
+          margin-left: 0px;
+          margin-right: 0px;
+}
+
+/*
+标题
+*/
+
+
+/*
+文章主题
+*/
+
+.solid{
+  border-style: groove;
+  border-width: thin;
+  border-color: lightgrey;
+  margin: 5%;
+      }
+
+
+body,
+.frostedglass::before {
+    background: url('../img/background2.jpeg') no-repeat center fixed;
+    background-size: cover;
+}
+
+.frostedglass {
+    position: relative;
+    height: auto;
+    color: #fff;
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 35px;
+    overflow: hidden;
+}
+
+.frostedglass::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: -20px;
+    filter: blur(5px);
+}
+
+/*
+尾栏
+*/
+
+.footer{
+  background-image: linear-gradient(to bottom , #ffffff00,#ffffff7a);
+  font-size:0px;
+  margin: 0px 0px;
+  bottom:0;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+}
+
+.button2 {
+  background-blend-mode: darken;
+  background-color:hsla(0, 0%, 100%, 0);
+  padding: 1% 0px;
+  width:25%;
+  color:black;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  margin: 0px 0px;
+  cursor: url('../img/iconwcnm.png'), pointer;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  overflow-y: scroll;
+  float: left;
+}
+
+.button2:hover {
+  float: left;
+  display: block;
+  background-image: linear-gradient(to bottom , #ffffff00,#ffffff9a);
+  color: black;
+  text-align: center;
+  margin: 0px 0px;
+  cursor: url('../img/iconwcnm.png'), pointer;
+  overflow-y: scroll;
+}

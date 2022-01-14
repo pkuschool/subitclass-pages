@@ -1,0 +1,214 @@
+
+@font-face {
+    font-family: 'fzboyasongs-gbregular';
+    src: url('归档/webfontkit-20211125-023548/fzbysjw.woff2') format('woff2'),
+         url('归档/webfontkit-20211125-023548/fzbysjw.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'fzwenzhengmingxingcaosregular';
+    src: url('webfontkit-20211209-011810/fzwenzmxcjw.woff2') format('woff2'),
+         url('webfontkit-20211209-011810/fzwenzmxcjw.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background: url("background.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -o-background-size: cover;                
+            background-size: cover;
+            cursor: url('iconwcnm.png'), pointer;
+            margin-left: 0px;
+            margin-right: 0px;
+}
+
+p{
+    color:white;
+    font-family:'fzboyasongs-gbregular';
+    text-align: center;
+}
+
+a{
+    font-family: 'fzboyasongs-gbregular';
+    text-align: center;
+}
+
+.solid{
+    border-width: thin;
+    border-color: lightgrey;
+    background-blend-mode: darken;
+    background-color: #00000075;
+    margin: 30px;
+}
+
+.test {
+    position:relative;
+    display: flex;
+    justify-content: center
+}
+
+a{
+    color:white;
+
+}
+
+.inner {
+    display:none;
+    position:absolute; top:30px; left:300px;
+    width: 50px;
+    height: 50px;
+    border:0px solid #000;
+    background:#fff;
+}
+
+.button1 {
+    background-blend-mode: darken;
+    background-color:hsla(0, 0%, 100%, 0);
+    padding: 15px 32px;
+    color:black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0px 0px;
+    cursor: url('iconwcnm.png'), pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    display: inline-block;
+    }
+
+.button1:hover {
+    background-color: gainsboro; 
+    color: black;
+    margin: 0px 0px;
+    cursor: url('iconwcnm.png'), pointer;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: hsla(0, 0%, 100%, 0.281);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: 14px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.button2 {
+    background-blend-mode: darken;
+    background-color:hsla(0, 0%, 100%, 0);
+    padding: 15px 32px;
+    color:black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0px 0px;
+    cursor: url('iconwcnm.png'), pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    display: inline-block;
+    }
+
+.button2:hover {
+    background-color: gainsboro; 
+    color: black;
+    margin: 0px 0px;
+    cursor: url('iconwcnm.png'), pointer;
+}
+
+.icon{
+    padding: 15px 0px;
+    cursor: url('iconwcnm.png'), pointer;
+}
+
+img
+  {
+  vertical-align: top;
+  }
+
+.quq{
+    text-align: center
+}
+
+.text2{
+    text-align: center
+}
+
+@-webkit-keyframes masked-animation {
+    0% {
+        background-position: 0 0
+    }
+    to {
+        background-position: -100% 0
+    }
+}
+
+h1 {
+    text-align: center;
+    color:whitesmoke;
+    font-family: 'fzwenzhengmingxingcaosregular';
+    margin: 30px auto;
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+    font-size: 50px;
+    background-image: -webkit-linear-gradient(left, rgba(252, 252, 252, 0.521),rgb(248, 248, 248) 25%,rgb(233, 233, 233) 50%, rgb(248, 248, 248) 75%, rgba(255, 255, 255,0.521));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-background-size: 200% 100%;
+    -webkit-animation: masked-animation 4s infinite linear;
+}
+
+h1:hover {
+    -webkit-animation: masked-animation 1s infinite linear;
+
+}
+
+p{
+    padding: 30px;
+}
+
+h1 {
+    position: relative;
+    z-index: 0;
+}
+
+h1::before {
+    content: '无用史料堆积处';
+    position: absolute;
+    z-index: 1;
+    -webkit-text-stroke: 0.005rem #000;
+}
+
+.ouo{
+    background-blend-mode: darken;
+    background-color: hsla(0, 0%, 100%, 0.281);
+    margin-left: 0px;
+    margin-right: 0px;
+	padding:0px;
+    position: fixed;
+}
