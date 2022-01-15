@@ -1,0 +1,470 @@
+    /* 顶栏已经float了 img为什么不回自动顺延顶头？ 怎么顶头呢*/
+    /* 图片半透明为啥不行啊————应该怎么设置呀 */
+    /* margin: 0 auto; 为什么不能把那四个框居中啊 */
+    /* 除了第一列，其它的footer都无了，请问是为什么啊啊啊啊啊啊啊———————————— */
+    /* .middle为啥设置边框没有显示呢 */
+    /* border-radius有办法设置上面是方形下面是圆形吗 */
+    /* footer设置了但不现实？ */
+    /* 图片怎么裁到一个大小 */
+
+
+    /* position: sticky;
+            top: 0px; 无法导航栏向下滑动的时候仍然在最上面
+        但是如果main2那个大盒子设了height就可以 但是这样height就不能根据内容长短自由调整了 
+        而且貌似因为main2没有高度的原因footer的定位也是套在顶头的图片里的？*/
+
+/* 尝试模态框失败 */
+    *{
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    ul{
+        list-style: none;
+    }
+    body{
+        /* background: rgba(138, 128, 130, 0.192) url(images/井盖探头小黄人.jpg) ;
+        background-position: 0 0;
+        background-size: contain; */
+        background-color: rgba(138, 128, 130, 0.192);
+    } 
+    .head_images a{
+        transition: .3s all;
+    }
+    .head_images a:hover{
+        display: block;
+        /* padding-left: 1px;
+        padding-bottom: 10px; */
+        /* width: 80px; */
+        transform: translateY(5px) scale(1.1);
+    }
+    h2,h3,p{
+        padding-top: 20px;
+        line-height: 35px;
+    }
+    p{
+        padding-bottom: 30px;
+    }
+    .title{
+        margin: 0 auto;
+        float: left;
+    }
+    /* .banner img{
+        float: left;
+    } */
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        color: #FFB319;
+    }
+    .main p,.footer p{
+        font: 17px SimSun;
+        line-height: 33px;
+    }
+   
+    
+    /* .banner img{
+        opacity:0.70;
+        }
+     */
+    /* body{
+        background-image: url();
+    } */
+    /* .banner img{
+        margin-top: -120px;
+    } */
+    /* .top{
+        margin-top: -300px;
+    } */
+/* 主页 */
+    /* 结构 */
+        /* .title{
+            margin-top: -300px;
+            border: 10px solid rgb(205, 208, 255);
+        } */
+.banner{
+    position: relative;
+    top: 0;
+    font: bolder 30px FangSong ;
+    /* color:rgb(51, 67, 211); */
+}
+
+    .cute{
+        position: fixed;
+        top: 100px;
+        right: 50px;
+    }
+    .cute2{
+        position: fixed;
+        bottom: 55px;
+        left: 88px;
+        
+    }
+    .cute2 p{
+        line-height: 24px;
+    }
+
+div[class*="banner-hi"]{
+    position: absolute;
+    top: 100px;
+}
+    .banner-hi1{
+        left: 280px;
+    }
+    .banner-hi2{
+        left: 240px;
+    }
+    .banner-hi3{
+        left: 100px;
+    }
+    .banner-hi4{
+        left: 480px;
+    }
+    .banner-hi5{
+        left: 180px;
+    }
+    .banner-hi6{
+        left: 80px;
+    }
+
+
+        .topest,
+        .top,
+        .banner,
+        .main,
+        .main2,
+        .main1-1,
+        .main1-2,
+        .main1-3,
+        .main1-4,
+        .footer{
+            width: 100%;
+            /* border: 3px solid red; */
+            margin: 0 auto;
+            /* padding: 0 auto; */
+            text-align: center;
+            /* background-color: rgb(223, 74, 74); */
+            /* margin-bottom: 1px; */
+        }
+        .main{
+            /* margin: 0 auto; */
+            margin-top: 10px;
+            /* height: 2000px; */
+        }
+            .main1-1{
+                height: 450px;
+            }
+            .main1-4{
+                width: 100%;
+                background-color: #FFB319;
+                margin: 0 auto;
+                position: relative;
+            }
+                .main1-4_1{
+                    width: 100%;
+                    position: absolute;
+                }
+                .main1-4_2{
+                    width: 100%;
+                    position: absolute;
+                    top: -30px;
+                    /* display: none; */
+                    /* visibility: hidden; */
+                    opacity: 0;
+                }
+                .main1-4_2:hover{
+                    /* display: block; */
+                    /* visibility: visible; */
+                    opacity: 1;
+                }
+    
+    /* top */
+        .top{
+            height: 66px;
+            /* border: 10px solid blue; */
+            background-color: rgba(124, 73, 73, 0.28);
+            position: sticky;
+            margin-top: -8px;
+            top: 0;
+        }
+        .head_logo{
+            font:  30px "等线 Light";
+            float: left;
+            /* margin-top: 20px; */
+            margin-left: 80px;
+            padding-right: 48%;
+        }
+        .head_images img{
+            width: 40px;
+        }
+        .head_images{
+            margin-right: 10px;
+        }
+        .head_images ul li{
+            float: left;
+            padding: 10px;
+        }
+
+        .footer{
+            background-color: rgba(124, 73, 73, 0.28);
+        }
+    /* banner */
+        /* .bannner img{
+            width: 100%;
+        } */
+
+            /* .banner{
+                background:rgb(0, 0, 0,0.3) url(images/1.1.jpeg) no-repeat top center;
+                background-size: 100%;
+            } */
+
+    /* main */
+            /* .main1{
+                margin: 0 auto;
+            } 
+            .main1-1 ul li{
+                width: 240px;
+                height: 360px;
+                float: left;
+            }
+            .main1-1 ul li:nth-child(even){
+                background-color: rgb(243, 171, 207);
+            }
+            .main1-1 ul li:nth-child(odd){
+                background-color: rgb(243, 230, 171);
+            } */
+
+            div[class*=main1-]{
+                /* border-top: 1px solid #000;
+                border-bottom: 1px solid #000; */
+                width: 80%;
+                /* height: 200px; */
+                background-color: rgba(255, 255, 255, 0.466);
+                margin: 0 auto;
+                margin-top: 100px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+            }
+        /* .banner_img{
+            float: left;
+            width: 100%;
+            color: rgb(0, 0, 0,0.3);
+        } */
+
+
+/* 时间轴 学习 生活 页 */
+    /* 结构 */
+        div[class*="main20"]{
+            width: 90%;
+            /* height: 10000px; */
+            text-align: center;
+            /* margin: 0 auto; */
+            position: relative;
+            
+        }
+        .main201{
+            height: 1700px;
+        }    
+        .main202{
+            height: 2500px;
+        }    
+        .main203{
+            height: 2000px;
+        }
+        .main204{
+            height: 3000px;
+        }
+        .main205{
+            height: 1300px;
+        }
+
+        
+            .main2-left{
+                width: 23%;
+                /* height: 800px; */
+                /* border: 5px solid rgba(248, 208, 99); */
+                /* margin-left: 50px; */
+                /* margin-top: 100px; */
+                /* float: left; */
+                position: absolute;
+                left: 50px;
+                top: 80px;
+                bottom: 20px;
+                /* margin-bottom: 20px; */
+            }
+            
+            div[class*=main2-l0]{
+                /* border:2px solid rgba(255, 255, 255, 0.671); */
+                border-radius: 10px;
+                background-color: rgba(255, 255, 255, 0.466);
+                /* margin: 0 auto; */
+            }
+                .main2-l01_column{
+                margin-top: 50px;
+                padding-bottom: 20px;
+                /* background-color: rgba(241, 195, 42, 0.22); */
+                border-radius: 10px;
+                margin-bottom: 20px;
+                /* margin: 0 auto; */
+                /* 圆角没实现是上面这个 */
+                }
+                .middle{
+                margin-top: -27px;
+                border: 5px white;
+                }
+                .main2-l02{
+                width: 100%;
+                height: 100px;
+                margin-bottom: 20px;    
+                }
+                    .main2-l02 p{
+/* 文字怎么竖直居中啊———— */
+                        padding-top: 8px;
+                        line-height: 28px;
+                    }
+                .main2-l03{
+                width: 100%;
+                height: 500px;
+                margin-bottom: 20px;
+                }
+                    .main2-l03 img{
+                        border-radius: 10px;
+                    }
+
+        .main2-right{
+            width: 66%;
+            /* margin-top: 100px; */
+            /* margin-left: 300px; */
+            /* border: 5px solid rgb(121, 219, 107); */
+            /* float: right; */
+            position: absolute;
+            right: 30px;
+            top: 100px;
+            
+            margin-bottom: 20px;
+        }
+        .main2-r01{
+            padding-bottom: 30px;
+        }
+            /* .main2-r01{
+                padding-top: 20px;
+            } */
+/* 这个为什么无法实现离上面那个边框远一些 */
+            div[class*=main2-r0]{
+                width: 80%;
+                /* height: 200px; */
+                background-color: rgba(255, 255, 255, 0.466);
+                margin: 0 auto;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                /* box-shadow: 0 15px 15px rgba(0,0,0,0.4); */
+            }
+            [class*=main2-r0]:hover{
+                box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+            }
+            .main2-r01_photo1{
+                width: 40%;
+                height: 100%;
+            }
+            [class*=main2-r0] img{
+                width: 40%;
+                margin-left: 0;
+                /* float: left; */
+                /* justify-content: left; */
+                /* text-align: left; */
+                position: relative;
+                left:0;
+            }
+
+/* 模态框 */
+            .container{
+                height: 30px;
+                width: 80px;
+                padding: 3px 6px;
+                background-color: #fff;
+                font-size: 15px;
+            }
+
+            .btn:hover{
+                color: tomato;
+            }
+
+            .see-m1{
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgb(0, 0, 0 0.5);
+                z-index: 9999;
+                /*↑  */
+                visibility: hidden;
+                opacity: 0;
+                pointer-events: none;
+                /*↑  */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /*↑  */
+            }
+        
+            .see-m1:target{
+                visibility: visible;
+                opacity: 1;
+                pointer-events: auto;  
+                /*↑  */  
+            }
+
+            .see-m1>div{
+                width: 400px;
+                padding: 2em;
+                border-radius: 10px;
+                background: cornsilk;
+            }
+
+            .m1-close{
+                position: absolute;
+
+                right: 30px;
+                top: 20px;
+
+                color: darkgray;
+            }
+
+            .m1-close:hover{
+                color: tomato;
+            }
+
+            .m1-title{
+                padding: 15px 0;
+            }
+
+            .m1-body{
+                font-size: 18px;
+                margin: 15px 0;
+            }
+
+
+
+/* 搜索框 */
+
+.search{
+	width: 449px;
+	height: 46px;
+	background:#eeefed;
+	border:1px solid #eeefed;
+	border-radius:3px;
+}
+.word{
+	border:1px solid #c8c8c8;
+	border-radius:3px;
+	margin-left: 2px;
+	margin-top: 5px;
+	padding-left: 10px;
+	width: 445px;
+	height: 36px;
+	color:#e7c117;
+}

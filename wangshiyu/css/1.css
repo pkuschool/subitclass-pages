@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-color: aliceblue;
+}
+.hobbies{
+    overflow: hidden;
+    height: 100%;
+
+}
+.content{
+    width: 100%;
+    position: relative;
+}
+.bgp{
+    filter: brightness(110%);
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 50px;
+    margin: auto;
+}
+.menu span {
+    font-size: 25px;
+    display: inline-block;
+    line-height: 3em;
+    padding: 0 2em;
+    margin-top: 0.5em;
+    position: relative;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+
+}
+.menu a:hover span {
+    margin-top: 0;
+    font-size: 30px;
+    color: rgb(204, 4, 4);
+}
+.container{
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    display: flex;
+}
+.table{
+    text-align: center;
+    font-style: italic;
+    line-height: 30px;
+}
+table,td{
+    border: 0.1px solid black
+}

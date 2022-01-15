@@ -1,0 +1,25 @@
+body{
+    background-color: aliceblue;
+}
+.copyright{
+    overflow: hidden;
+    height: 100%;
+}
+.copyright_title{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 100px;
+    font-size: 23px;
+}
+.copyright_titles{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 150px;
+    font-size: 18px;
+}

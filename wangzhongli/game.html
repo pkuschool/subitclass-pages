@@ -1,0 +1,220 @@
+<!DOCTYPE html><!--告知 Web 浏览器页面使用了哪种 HTML 版本-->
+<meta http-equiv="X-UA-Compatible" content="IE=Edge chrome=1" />
+<!--以最新IE版本进行渲染，兼容谷歌Frame-->
+<meta charset="utf-8" />
+<!--告知浏览器此页面属于什么字符编码格式-->
+<HTML lang="zh">
+<!--向搜索引擎表示该页面是html语言，并且语言为英文网站-->
+<meta name="referrer" content="always" />
+<!--追踪用户是从哪个页面跳转过来-->
+<title>wzl的博客</title><!--网页名称-->
+<link rel="stylesheet" href="frame/abc.css" ><!--连接外部CSS-->
+<script src="frame/Untitled-1.js"></script><!--连接JS-->
+<!--网址图片-->
+<link rel="shortcut icon" href="image\2a.icon">
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<body>
+    <body background="image\44.jpg"
+    style="background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-attachment:fixed;"
+    >
+    <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="hobby.html">个人简介</a></li>
+        <li><a href="game.html">关于电竞</a></li>
+        <li><a href="about.html">About</a></li>
+        
+    </ul>
+<h1>电竞</h1>
+<body>
+<h2>apex</h2>
+<p>刚开服就玩 一直玩到现在，热爱恶灵动力小子</p>
+<p>最高单排上过钻3 </p>
+<p>喜欢R400or和平+R99 小帮手加獒犬</p>
+</body>
+<body>
+    <h2>LOL</h2>
+    <p>从小学4年级玩到现在 主玩打野</p>
+    <p>最高网二大师60点，打了两个号一个是前面，另一个钻1 56胜率，可惜前面的大师胜率不够看</p>
+    </body>
+    <!--底栏-->
+    <a href="hobby.html" id="footer">CopyRight@王中吏2022 </a>
+    <style type="text/css">
+        *{ padding:0; margin:0; list-style:none; border:0;}
+        .all{
+          width:500px;
+          height:200px;
+          padding:7px;
+          border:1px solid #ccc;
+          margin:100px auto;
+          position:relative;
+        }
+        .screen{
+        width:500px;
+        height:200px;
+        overflow:hidden; 
+        position:relative;
+        }
+        .screen li{ width:500px; height:200px; overflow:hidden; float:left;}
+        .screen ul{ position:absolute; left:0; top:0px; width:3000px;}
+        .all ol{ position:absolute; right:10px; bottom:10px; line-height:20px; text-align:center;}
+        .all ol li{ float:left; width:20px; height:20px; background:#fff; border:1px solid #ccc; margin-left:10px; cursor:pointer;}
+        .all ol li.current{ background:yellow;}
+         
+         
+        /*#arr {display: none;}*/
+        #arr span{ width:40px; height:40px; position:absolute; left:5px; top:50%; margin-top:-20px; background:#000; cursor:pointer; line-height:40px; text-align:center; font-weight:bold; font-family:'黑体'; font-size:30px; color:#fff; opacity:0.3; border:1px solid #fff;}
+        #arr #right{right:5px; left:auto;}
+         
+         
+        </style>
+         
+         
+         
+         
+        </head>
+         
+         
+        <body>
+        <div class="all" id='all'>
+        <div class="screen" id="screen">
+                <ul id="ul">
+                    <li><img src="image\2a.icon" width="500" height="200" /></li>
+                    <li><img src="image\a.jpg" width="500" height="200" /></li>
+                    <li><img src="image\b.webp" width="500" height="200" /></li>
+                    <li><img src="image\c.webp" width="500" height="200" /></li>
+                    <li><img src="image\z.webp" width="500" height="200" /></li>
+                </ul>
+                <ol></ol>
+                <div id="arr"><span id="left"><</span><span id="right">></span></div>
+            </div>
+        </div>
+        </body>
+        </html>
+        <script>
+            //需求：无缝轮播图
+            //步骤：
+            //1.老三步。获取相关元素。
+            //2.补齐相互盒子
+                //1.复制第一张图片所在的li，填入所在的ul中。
+                //2.生成相关的ol中的li。
+                //3.点亮第一个ol中的li。
+            //3.鼠标放到小方块儿上，轮播图片。
+            //4.添加定时器。
+            //5.左右切换的按钮。
+         
+         
+         
+         
+         
+         
+            //1.老三步。获取相关元素。
+            var box = document.getElementById("all");
+            var ul = box.children[0].children[0];
+            var ol = box.children[0].children[1];
+            var ulLiArr = ul.children;
+            //2.补齐相互盒子
+                //1.复制第一张图片所在的li，填入所在的ul中。
+            var newLi = ulLiArr[0].cloneNode(true);
+            ul.appendChild(newLi);
+                //2.生成相关的ol中的li。
+            for(var i=0;i<ulLiArr.length-1;i++){
+                var newOlLi = document.createElement("li");
+                newOlLi.innerHTML = i+1;
+                ol.appendChild(newOlLi);
+            }
+                //3.点亮第一个ol中的li。
+            var olLiArr = ol.children;
+            ol.children[0].className = "current";
+            //3.鼠标放到小方块儿上，轮播图片。
+            for(var i=0;i<olLiArr.length;i++){
+                olLiArr[i].index = i;
+                olLiArr[i].onmouseover = function () {
+                    for(var j=0;j<olLiArr.length;j++){
+                        olLiArr[j].className = "";
+                    }
+                    olLiArr[this.index].className = "current";
+                    animate(ul,-this.index*ul.children[0].offsetWidth);
+                    key = square = this.index;
+                }
+            }
+            //4.添加定时器。
+            var timer = null;
+            var key = 0;
+            var square = 0;
+            timer = setInterval(autoPlay,1000);
+         
+         
+            function autoPlay(){
+                key++;
+                square++;
+                if(key>olLiArr.length){
+                    key=1;
+                    ul.style.left = 0;
+                }
+                animate(ul,-key*ul.children[0].offsetWidth);
+         
+         
+                square = square>olLiArr.length-1?0:square;
+                for(var j=0;j<olLiArr.length;j++){
+                    olLiArr[j].className = "";
+                }
+                olLiArr[square].className = "current";
+            }
+            //5.鼠标移开开启定时器，鼠标放上去开启定时器。
+            box.onmouseover = function () {
+                clearInterval(timer);
+            }
+            box.onmouseout = function () {
+                timer = setInterval(autoPlay,1000);
+            }
+            //6.左右切换的按钮。
+            var btnArr = box.children[0].children[2].children;
+            btnArr[0].onclick = function () {
+                key--;
+                square--;
+                if(key<0){
+                    key=4;
+                    ul.style.left = -5*ul.children[0].offsetWidth + "px";
+                }
+                animate(ul,-key*ul.children[0].offsetWidth);
+         
+         
+                square = square<0?olLiArr.length-1:square;
+                for(var j=0;j<olLiArr.length;j++){
+                    olLiArr[j].className = "";
+                }
+                olLiArr[square].className = "current";
+            }
+            btnArr[1].onclick = function () {
+                autoPlay();
+            }
+         
+         
+         
+         
+         
+         
+         
+         
+            //  基本封装
+            function animate(obj,target) {
+                clearInterval(obj.timer);
+                var speed = obj.offsetLeft < target ? 15 : -15;
+                obj.timer = setInterval(function() {
+                    var result = target - obj.offsetLeft;
+                    obj.style.left = obj.offsetLeft + speed  + "px";
+                    if(Math.abs(result) <= 15) {
+                        obj.style.left = target + "px";
+                        clearInterval(obj.timer);
+                    }
+                },10);
+            }
+         
+         
+         
+         
+        </script>
+    <p>备注：这个图片轮播的框架是我扒下来的。</p>

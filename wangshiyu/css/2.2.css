@@ -1,0 +1,25 @@
+body{
+    background-color: aliceblue;
+}
+.thanks{
+    height: 100%;
+    overflow: hidden;
+}
+.thanks_title{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 100px;
+    font-size: 23px;
+}
+.thanks_titles{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 150px;
+    font-size: 18px;
+}

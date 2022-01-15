@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-color: aliceblue;
+}
+.contact{
+    overflow: hidden;
+    height: 100%;
+}
+.weChet{
+    overflow: hidden;
+    height: 1300px;
+}
+.weChet_img1{
+    border: radius 5px;
+    width: 500px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 350px;
+    position: absolute;
+}
+.weChet_img2{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 200px;
+    position: absolute;
+}
+.weChet_img3{
+    border: radius 5px;
+    width: 500px;
+    height: 500px;
+    margin-top: 703px;
+    margin-left: 350px;
+    position: absolute;
+}
+.weChet_img4{
+    border: radius 5px;
+    width: 150px;
+    height: 150px;
+    margin-top:275px;
+    margin-left: 853px;
+    position: absolute;
+}
+.weChet_title{
+    margin-top: 465px;
+    margin-left: 860px;
+    position: absolute;
+    color: darkblue;
+    font-size: 20px;
+    font-weight: 550;
+    font-style: italic;
+}
+.weChet_titles{
+    margin-top: 765px;
+    margin-left: 250px;
+    position: absolute;
+    color: darkblue;
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+.pn{
+    overflow: hidden;
+    height: 200px;
+}
+.pn_title{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 350px;
+    font-size: 25px;
+    font-weight: 550;
+    font-style: italic;
+}
