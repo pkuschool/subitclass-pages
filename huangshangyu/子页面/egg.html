@@ -1,0 +1,631 @@
+<!--以下内容修改自scp-cn-963-j-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="html-block-html" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-type" content="text/html; charset=utf-8"/><link rel="stylesheet" href="/common--theme/base/css/html-block.css"/></head><body>
+<style type="text/css">
+    /*引自SCP-3125*/
+    body {
+        font-family: verdana, arial, helvetica, sans-serif;
+        font-size: 12.8px; /* 16px * 0.8 */
+        color: #333;
+        line-height: 141%;
+    }
+
+hr{
+width:90%
+}
+    .classified-info {
+        display: none;
+    }
+
+    blockquote {
+        border: 1px dashed #999;
+        padding: 0 12.8px;
+        background-color: #f4f4f4;
+    }
+
+    a {
+        color: #b01;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .collapsed {
+        display: none;
+    }
+
+    h4 {
+        font-size: 130%;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+ keycap {
+   /*引自http://www.scp-wiki.net/component:theme */
+
+    border: 1px solid;
+    border-color: #ddd #bbb #bbb #ddd;
+    border-bottom-width: 2px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+    padding: 1px 3px;
+    font-family: inherit;
+    font-size: 0.85em;
+    white-space: nowrap;
+}
+
+table {
+  border: 1px solid #000000;  
+  border-collapse: collapse;  
+}  
+tr, td {  
+  padding:4px 10px;
+  border: 1px solid #000000;  
+}
+
+</style>
+
+<!--用类似的原理复现了首页的红字，由于时间限制没有整太复杂-->
+<script>
+time1=30
+
+i=0
+moving1sw=0
+
+//更新进度条
+displaybox=new Array("■■■■■■■■■■■■■■■□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□","■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■□□□□□□□□□□□□□□□□□□□□□□□□□□□□","■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■□","■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■□","■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■□","■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+
+displaybox2=new Array("■■■■■■■■■■■■■■■□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□","■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■□□□□□□□□□□□□□□□□□□□□□□□□□□□□","■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■□","■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■□","■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■□","■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■□","■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+
+function adding0(str,strlength){
+    var n=strlength-str.length
+    while(n>0){
+        str="0"+str
+        n=n-1
+    }
+    return str;
+}
+
+function timecounting1(){
+    var j=String(time1)
+    if(time1>=0){
+        document.getElementById("timer1").innerHTML=adding0(j,2)
+        time1=time1-1
+        setTimeout("timecounting1()",1000)
+    }
+    else{
+        document.getElementById("page6").style="display:none"
+        topage7()
+    }
+
+}
+
+time2=30
+
+function timecounting2(){
+    var j=String(time2)
+    if(time2>=0){
+        document.getElementById("timer2").innerHTML=adding0(j,2)
+        time2=time2-1
+        setTimeout("timecounting2()",1000)
+    }
+    else{
+        topage13()
+    }
+}
+
+time3=60
+function timecounting3(){
+    var j=String(time3)
+    if(time3>=0){
+        document.getElementById("timer3").innerHTML=adding0(j,2)
+        time3=time3-1
+        setTimeout("timecounting3()",1000)
+    }
+    else{
+    openrealcontent2()
+    }
+}
+
+time4=90
+
+function timecounting4(){
+    var j=String(time4)
+    if(time4>=0){
+        document.getElementById("timer4").innerHTML=adding0(j,2)
+        time4=time4-1
+        setTimeout("timecounting4()",1000)
+    }
+    else{
+        toend4()
+    }
+}
+
+ii=0
+
+function moving2(){
+    if(ii<displaybox2.length){
+        document.getElementById("progressbar2").innerHTML=displaybox2[ii]
+        ii=ii+1
+        setTimeout("moving2()",1000)
+    }
+    else{
+    topage10()
+    }
+}
+
+function moving1(){
+    if(moving1sw==1){
+        if(i<displaybox.length){
+
+            document.getElementById("progressbar").innerHTML="<blockquote><p>正在下载升级包…</p><p><center>"+displaybox[i]+"</center></p></blockquote>"
+            i=i+1
+            setTimeout("moving1()",1000)
+        }
+
+        else{
+            setTimeout("topage2()",500)
+        }
+    }
+}
+
+function startmoving1(){
+
+    if (moving1sw==0){
+        moving1sw=1
+        moving1()
+        document.getElementById("button1").style="cursor:default"
+    }
+
+}
+function topage1(){
+    document.getElementById("pageo").innerHTML='<blockquote><p><center>检测到版本更新，请立即升级。</center></p><blockquote><p><center><b><u id=button1 style="cursor:pointer" onclick="startmoving1()">立即升级</u></b></center></p></blockquote></blockquote><div id="progressbar"></div>'
+}
+
+function topage2(){
+    document.getElementById("pageo").innerHTML='<blockquote><p>下载完成，正在安装更新…</p></blockquote>'
+    setTimeout("topage2_5()",5000)
+    setTimeout("topage3()",7000)
+
+    return false
+}
+
+function topage2_5(){
+    document.getElementById("pageo").innerHTML=""
+    document.getElementById("pagep").innerHTML=""
+    return false
+
+}
+
+function topage3(){
+    document.getElementById("pageo").innerHTML='<blockquote><p><center>安装成功</center></p><p><center>正在重新启动…</center></p></blockquote>'
+    setTimeout("topage2_5()",3000)
+    setTimeout("totitle1()",5000)
+}
+
+function totitle1(){
+    document.getElementById("title1").innerHTML='<blockquote><p><hr></p><center><b><p style="font-size:14px">欢迎进入烧鱼君的彩蛋19.19.8.10</p></b></center><p><hr></p></blockquote>'
+    setTimeout("topage5()",1000)
+}
+
+function topage5(){
+    document.getElementById("page5").style=""
+    setTimeout("topage6()",3000)
+}
+
+function topage6(){
+    document.getElementById("page5").style="display:none"
+    setTimeout('document.getElementById("page6").style=""',1500)
+    setTimeout('timecounting1()',1510)
+}
+
+function topage7(){
+    document.getElementById("page7").style=""
+    setTimeout("topage8()",1000)
+}
+
+function topage8(){
+    document.getElementById("page7").innerHTML=""
+
+    document.getElementById("page8").style=""
+
+}
+
+function topage9(){
+    document.getElementById("title1").innerHTML=""
+    document.getElementById("page8").innerHTML=""
+
+    document.getElementById("page9").style=""
+
+    moving2()
+}
+
+function topage10(){
+    document.getElementById("page9").innerHTML=""
+
+    setTimeout('document.getElementById("page10").style=""',1500)
+    setTimeout('topage11()',4500)
+
+}
+
+function topage11(){
+    document.getElementById("page10").innerHTML=""
+
+    setTimeout('document.getElementById("page11").style=""',1500)
+
+}
+function topage12(){
+    document.getElementById("page11").innerHTML=""
+
+    setTimeout('document.getElementById("page12").style=""',1500)
+    setTimeout('timecounting2()',1500)
+
+}
+function topage13(){
+    document.getElementById("page12").innerHTML=""
+
+    setTimeout('document.getElementById("page13").style=""',1500)
+    setTimeout('openrealcontent1()',38500)
+}
+
+function openrealcontent1(){
+    document.getElementById("opening").innerHTML="打开成功！用时:37s 已超过了101%的用户"
+    document.getElementById("realcontent").style=""
+    timecounting3()
+}
+
+function openrealcontent2(){
+    document.getElementById("ads").style="display:none"
+    document.getElementById("adend").style=""
+    document.getElementById("realcontent2").style=""
+    setTimeout("toend1()",1500)
+}
+
+function toend1(){
+    document.getElementById("end1").style=""
+}
+
+function toend2(){
+    document.getElementById("end2").style=""
+}
+
+function toend3(){
+    document.getElementById("end1").style="display:none"
+    document.getElementById("end2").style="display:none"
+    document.getElementById("end3").style=""
+    timecounting4()
+
+}
+
+function toend4(){
+    document.getElementById("end3").style="display:none"
+    document.getElementById("page13").style="display:none"
+    document.getElementById("end4").style=""
+    setTimeout('document.getElementById("end4").style="display:none"',1500)
+    setTimeout('toend5()',4500)
+}
+
+function toend5(){
+    document.getElementById("end5").style=""
+}
+
+</script>
+
+<!--最开是进来的页面-->
+<div id="pagep">
+    <blockquote>
+        <p><hr></p>
+        <center><b><p style="font-size:14px">欢迎进入烧鱼君的彩蛋1.14.51.4</p></b></center>
+        <p><hr></p>
+    </blockquote>
+</div>
+
+<!--第零页-->
+<div id="pageo">
+
+</div>
+
+
+<script>
+    setTimeout("topage1()",3000)
+</script>
+
+<div id="title1"></div>
+
+<div id="page5" style="display:none">
+<blockquote>
+<p>
+<center>启动中…请稍候…</center>
+</p>
+</blockquote>
+</div>
+
+<div id="page6" style="display:none">
+<blockquote>
+<p>
+<center>即将进入，请稍候…　　　　　距离广告结束还有<b id="timer1">30</b>秒|<div style="display:inline">VIP用户免广告</div></center>
+</p>
+<center><p style="color:red;cursor:pointer"><u>普通同学也能当校长！尽在《北大附中模拟器》>查看详情></u></p></center>
+</blockquote>
+</div>
+
+<div style="display:none" id="page7">
+<blockquote>
+<p>
+<center> 广告播放结束！正在进入登陆界面...</center>
+</p>
+</blockquote>
+</div>
+
+<div style="display:none" id="page8">
+<blockquote>
+<p>
+<center>登陆界面</center>
+</p>
+<p>
+<hr>
+</p>
+<p>
+　　　　用户名：<u>SubIT</u>
+</p>
+<p>
+<hr>
+</p>
+<p>
+　　　　密码：<u>*************</u>
+</p>
+<p>
+<hr>
+</p>
+<p>
+<center><keycap>X</keycap>下次自动登陆
+</p>
+<p>
+<table style="cursor:pointer" id="loginbt" onclick="topage9()">
+<tr><td>登陆</td></tr>
+</center>
+</table>
+</p>
+</blockquote>
+</div>
+
+<div style="display:none" id="page9">
+<blockquote>
+<p>
+<center>正在登陆…
+<div id="progressbar2">
+</div>
+</center>
+</p>
+</blockquote>
+</div>
+
+<div style="display:none" id="page10">
+<blockquote>
+<p>
+<center>登陆成功！正在跳转…</center>
+</p>
+</blockquote>
+</div>
+
+<div style="display:none" id="page11">
+<blockquote>
+<p>
+<hr>
+</p>
+<p>
+<center><b style="font-size:14px">烧鱼君的彩蛋19.19.8.10</b></center>
+</p>
+<p>
+<hr>
+</p>
+<p>
+<center>你好，SubIT,您的权限等级为：<b>0</b>|设置|皮肤|13月32日 ☼ -273.16°C 星期八</center>
+</p>
+<p>
+<hr>
+</p>
+<center>
+<p>
+<table border="1" style="color:red; cursor:pointer;text-decoration:underline">
+
+<tr><td>震惊！13年前的烧鱼君…</td><td>SubIT搞笑动图第17期:我要做XY小姐的狗</td></tr>
+<tr><td>13年iMac的5个妙用</td><td>专访:你不知道的玉磊日常</td></tr>
+<tr><td>两个lyc相遇，结果惊了！</td><td>SubIT十大社员排名:他只排第三！</td></tr>
+</table>
+</p>
+</center>
+<p>
+<hr>
+</p>
+<p>
+<center>请输入您要查询的项目：<b><u>烧鱼君</u></b></center>
+</p>
+<p>
+<center>
+<table border="1" style="cursor:pointer" onclick="topage12()">
+<tr><td><u><b>点击查询</b></u></td></tr>
+</table>
+</center>
+</p>
+</blockquote>
+</div>
+
+<div style="display:none" id="page12">
+<blockquote>
+<p>
+<center>
+即将打开 页面：<b>烧鱼君的个人简介</b>，请稍候…　　距离广告结束还有<b id=timer2>30</b>秒|<div style="display:inline">VIP用户免广告</div>
+</center>
+</p>
+<p>
+<center style="color:red;cursor:pointer;text-decoration:underline">
+闺蜜玩了两天，从社长变成红色禁区，蠢哭了！《模拟北大附》>查看详情>
+</center>
+</p>
+</blockquote>
+</div>
+
+<div style="display:none" id="page13">
+<blockquote>
+<center>
+<p>
+广告播放结束！
+</p>
+<p id="opening">
+正在打开…
+</p>
+</center>
+<p>
+<hr>
+</p>
+<div id="realcontent" style="display:none">
+<div>
+
+<p><b>人员姓名：</b>烧鱼君</p>
+
+
+<p><b>人员简介：</b>烧鱼君SubIT THG成员，爱好写网页</p>
+
+<p>烧鱼君对SCP基金会十分感兴趣。</p>
+
+<p>烧鱼君正在学习渗透测试</p>
+
+<blockquote id=ads>
+<center>
+<p>
+连续阅读了这么久，休息一下吧！　距离广告结束还有<b id="timer3">60</b>秒|VIP用户免广告
+</p>
+<p style="color:red;cursor:pointer;text-decoration:underline">
+给你一个学校，你能管理好吗？《我要当校长》>查看详情>
+</p>
+</center>
+</blockquote>
+<blockquote id=adend style="display:none">
+<center>
+<p>
+广告播放结束！继续为您显示页面：烧鱼君
+</p>
+</center>
+</blockquote>
+<div id="realcontent2" style="display:none">
+<p>，对其中的XSS注入已有一定了解。烧鱼君擅长python，可用python解决生活中的问题</p>
+
+</div>
+<p>
+<hr>
+</p>
+</div>
+</div>
+</blockquote>
+</div>
+
+<div id="end1" style="display:none">
+<blockquote>
+<p>
+<center>
+页面：<b>烧鱼君</b> 显示完毕！
+
+</p>
+<p>
+<hr>
+</p>
+<p>
+
+猜你喜欢：
+
+</p>
+
+<table style="color:red;cursor:pointer;text-decoration:underline">
+<tr><td>SubIT社团介绍</td><td>西楼大屏项目</td></tr>
+<tr><td>关于yammer管理的再一次修订</td><td>社员一览</td></tr>
+</table>
+
+<p>
+<hr>
+</p>
+
+<p>
+<table>
+<tr><td>返回主界面</td><td><b onclick="toend2()" style="cursor:pointer">退出</b></td></tr>
+</table>
+</p>
+</center>
+</blockquote>
+</div>
+
+<div id="end2" style="display:none">
+<blockquote>
+<center>
+<p>
+您真的要退出 烧鱼君的彩蛋19.19.8.10 吗？
+</p>
+<p>
+<hr>
+</p>
+<p>
+<table>
+<tr><td>最小化到托盘</td><td><b onclick="toend3()" style="cursor:pointer"><u>退出</u></b></td></tr>
+</table>
+</p>
+<p>
+<keycap>√</keycap>不再提醒我
+</p>
+</center>
+</blockquote>
+</div>
+
+<div id="end3" style="display:none">
+<blockquote>
+<center>
+<p>
+正在退出，请稍候　　　　　　　　距离广告结束还有<b id="timer4">90</b>秒|VIP用户免广告
+</p>
+<p style="color:red;text-decoration:underline;cursor:pointer">
+开局是学生，你能活过段考吗？《北大附中：学生》>查看详情>
+</p>
+</center>
+</blockquote>
+</div>
+
+<div id="end4" style="display:none">
+<blockquote>
+<p>
+<center>
+退出成功！
+</center>
+</p>
+</blockquote>
+</div>
+
+<div id="end5" style="display:none">
+<center>
+<blockquote>
+<p>
+<hr>
+</p>
+<p>
+<b style="font-size:14px">正在检测版本更新...</b>
+</p>
+<p>
+<hr>
+</p>
+</blockquote>
+<blockquote>
+<p>
+检测到版本更新，请立即升级。
+</p>
+<blockquote>
+<p>
+立即升级
+</p>
+</blockquote>
+</blockquote>
+</center>
+</div>
+</body></html>

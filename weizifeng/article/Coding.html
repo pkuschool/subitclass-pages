@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <title>呐~</title>
+    </head>
+    <noscript>
+        <div style="background-color: white;width: 100vw;font-size: x-large;text-align: center;height: 100px;">
+            请开启JavaScript
+        </div>
+    </noscript>
+    <body id="site-default">
+    <div id="site-background" style="height: 200vh;">
+        <div class="head_block"></div>
+        <nav class="header">
+            <script type="text/javascript" src="./header_sub.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $("nav>ul>li").mouseenter(function(){
+                        $(".head_block").stop().slideDown(200);
+                        $("nav>ul>li>ul").stop().slideDown(200);
+                    });
+                    $("nav>ul>li").mouseleave(function(){
+                        $(".head_block").stop().slideUp(200);
+                        $("nav>ul>li>ul").stop().slideUp(200);
+                    });
+                });
+            </script>
+        </nav>
+        <div style="padding-left: 20px;padding-top: 5vh;">
+            <h1>关于代码</h1>
+            <h2>起源及过程</h2>
+            <p>
+                说起代码这事，
+                时间应该能追溯到2016年，也就是我小学四年级的时候。那时候是因为对机器人感兴趣，因此第一次接触到了“编程”这个概念（那时候还是Lego的图形化编程）
+                <br>2017年，小学五年级的时候，我真正的接触到了“代码”，也就是代码化编程。当然，那时依然是以机器人为载体
+                <br>2018年，小学六年级的时候，我开始学Python（虽然是结合Minecraft），所以其实也是边玩边学
+                <br>2019年3月，初一下半学期时，我接触到了C++，也是在那时开始学习的OI（信息学奥赛）<span class="heimu" title="你知道的太多了">头发-1</span>后来因为上初三要中考，因此就没有继续参加CSP了
+                <br>2021年9月，加入SubIT社团（以及技术课），开始学习HTML（HTML、CSS、JavaScript三件套）<span class="heimu" title="你知道的太多了">头发-10086</span>
+            </p>
+            <h2>一些想法</h2>
+            <p><strong>总之</strong>，Coding非常的“有意思”，<del>还能治低血压</del>。但有时也会很让人脑壳痛，比如学算法/数据结构</p>
+            <p>这里列举几个我学过的算法/数据结构<span class="heimu" title="你知道的太多了">现在估计都忘的差不多了</span>
+            <p>思想/算法:枚举、剪枝（一种思想）、贪心算法、动态规划、递归、递推、分治算法、二分查找、回溯算法、DFS（深度优先搜索）、BFS（广度优先搜索）</p>
+            <p>二叉树的遍历:前序遍历、中序遍历、后序遍历、层序遍历</p>
+            <p>排序算法:冒泡排序、选择排序、快速排序、桶排序、堆排序（大根堆、小根堆）、归并排序</p>
+            <p>最短路径算法:Bellmanford算法、Dijkstra算法、SPFA算法、、A*算法</p>
+            <p>最小生成树算法:Prim算法、Kruskal算法</p>
+            <p>数据结构:栈、队列、链、邻接表、邻接矩阵、并查集</p>
+            <p>...</p>
+            <p>总之就是很多</p>
+            <h2>一些小小的成就</h2><span class="heimu" title="你知道的太多了">有些比赛的时间或者名称可能有错，毕竟时间比较久远，见谅</span>
+            <p>
+                <li>2019 RoboRAVE 灭火挑战赛 亚洲公开赛 冠军</li>
+                <li>2019 RoboRAVE 灭火挑战赛 全球总决赛 冠军</li>
+                <li>...</li>
+                <li>2020 CSP-J 普及组 二等奖（是我太菜了）</li>
+                <li>
+                    第11蓝桥杯大赛青少年组 
+                    <ul>
+                        <li>C++高级组 北京选拔赛 三等奖（2019）</li>
+                        <li>C++高级组 省赛 二等奖（2020）</li>
+                    </ul>
+                </li>
+                <li>青少年人工智能技术水平测试5级（因为貌似现在就出到了5级）
+                <li>...</li>
+            </p>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>©Copyright 2021 Wei Zifeng</p>
+        <p>powered by <a href="https://code.visualstudio.com">Visual Studio Code</a></p>
+    </footer>
+    </body>
+</html>

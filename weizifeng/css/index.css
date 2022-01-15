@@ -1,0 +1,30 @@
+@media(prefers-color-scheme: light){
+    .box-centerfont-dark{
+        background-color: rgba(248,248,248);
+        color: black;
+    }
+}
+@media(prefers-color-scheme: dark){
+    .box-centerfont-dark{
+        background-color: rgba(133,133,133,0.3);
+        color: white;
+    }
+}
+
+.touxiang{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-radius: 50% ;
+    width: 10em; 
+    height: 10em;
+}
+
+.box-head{
+    display: flex;
+    flex-direction: column; 
+    padding: 20px 40px 20px 40px;
+}
+
+

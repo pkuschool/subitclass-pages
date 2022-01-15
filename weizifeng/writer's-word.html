@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <link rel="stylesheet" type="text/css" href="./css/writer's-words.css">
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <title>呐呐呐~~</title>
+    </head>
+    <noscript>
+        <div style="background-color: white;width: 100vw;font-size: x-large;text-align: center;height: 100px;">
+            请开启JavaScript
+        </div>
+    </noscript>
+    <body id="site-default">
+    <div id="site-background" style="height: 150vh;">
+        <div class="head_block" style="min-width: 750px;"></div>
+        <nav class="header" style="min-width: 750px;">
+            <script type="text/javascript" src="./js/header.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $("nav>ul>li").mouseenter(function(){
+                        $(".head_block").stop().slideDown(200);
+                        $("nav>ul>li>ul").stop().slideDown(200);
+                    });
+                    $("nav>ul>li").mouseleave(function(){
+                        $(".head_block").stop().slideUp(200);
+                        $("nav>ul>li>ul").stop().slideUp(200);
+                    });
+                });
+            </script>
+        </nav>
+        <div style="flex-direction: column; width: 70%;margin-left: 30px;">
+            <h2 style="padding-top: 10vh;margin-top: 0;">作者的话：</h2>
+            <strong>((如你所见，这个个人介绍的技术力非常的低<span class="heimu" title="你知道的太多了">呜呜呜，因为我技术力太低了)</span>（但还是凑合看吧</strong>
+            <br><strong>总之，感谢您点开本网页，如果对本网页有什么意见或者建议，欢迎相互沟通～</strong>
+            <p>非常建议用黑暗模式，个人感觉显示效果比浅色模式还好</p>
+            <p>搜索栏支持站内搜索（我用的是“字典”一个一个校验输入，所以只有原封不动输入名称才可以，具体的文章需要删除“关于”）</p>
+            <p>站外搜索是用一个模态框+bing搜索，总之试试就知道了（实在不行可以看代码</p>
+            <h2>致谢：</h2>
+            <h3><strong>SubIT</strong></h3>
+            <h3><strong>SubIT技术课的同学们</strong></h3>
+            <h2>本网页引用了：</h2>
+            <p>jQuery</p>
+            <p>ionicons</p>
+            <p>----------------</p>
+            <div class="i_m_cute_give_me_money">
+                <h1><span class="heimu">欢迎投喂,微信收款码:</span></h1>
+                <img src="./src/我很可爱,请给我钱.jpg">
+            </div>
+            <!-- <span class="heimu" title="你知道的太多了"><del>WXZLYCXJDG!!!</del></span> -->
+        </div>
+    </div>
+    <footer class="footer">
+        <p>©Copyright 2021 Wei Zifeng 保留所有权利</p>
+        <a href="../writer's-more.html">彩蛋</a>
+        <p>powered by <a href="https://code.visualstudio.com">Visual Studio Code</a></p>
+    </footer>
+    </body>
+</html>

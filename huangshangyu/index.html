@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <style type="text/css">
+	    /*给body加一个背景*/
+        body{
+	    	background: url("background.png") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -o-background-size: cover;                
+            background-size: cover;
+            padding:0px;
+            margin: 0px;
+            background-color: black;
+	    }
+
+        a{
+            text-decoration:none
+        }
+        /*被鼠标悬停的链接*/
+        a.small:hover{
+            color:rgb(224, 224, 224);
+        }
+
+
+    </style>
+    <link rel="stylesheet" href="style/mainstyle.css"> <!---->
+
+    
+</head>
+
+
+<body class = 'background'>
+    
+    <!--头像模块-->
+    <script type="text/javascript">
+
+        var interval1 = 3000;
+        var interval2 = 6000;
+        var interval3 = 9000;
+        var interval4 = 12000;
+
+        function change1(){
+            const change = document.querySelector("#change");
+            change.innerHTML = "烧鱼君的数据库属于";
+        }
+        function change2(){
+            const change = document.querySelector("#change");
+            change.innerHTML = "机密";
+        }
+        function change3(){
+            const change = document.querySelector("#change");
+            change.innerHTML = "未授权访问的人员";
+        }
+        function change4(){
+            const change = document.querySelector("#change");
+            change.innerHTML = "将被处决";
+        }
+
+        setTimeout(change1,interval1);
+        setTimeout(change2,interval2);
+        setTimeout(change3,interval3);
+        setTimeout(change4,interval4);
+    </script>
+
+    <!--顶栏-->
+    <div class = 'guide'>
+        <!--头像-->
+        <div href="img/tx.gif" class="name heading">
+            <img class="txcircle " 
+                src = 'img/tx.gif' 
+                width = '30px' height = '30px' 
+            />
+        </div>
+        <!--名字和链接-->
+        <div class="linksInGuide">
+            <div class="white name">
+                <b>烧鱼君</b>
+            </div>
+            <span id="caution"></span>
+            <div class="name linksInGuide2" id='linksInGuide'>
+                <a class="gray name small home" href="index.htm">主页</a>
+                <a class="gray name small home" href="子页面/introduction.html">介绍</a>
+                <a class="gray name small home" href="子页面/articles.html">文章</a>
+                <a class="gray name small home" href="子页面/album.html">相册</a>
+            </div>
+            <script type="text/javascript">
+    window.onload = function(){
+        //获取ul ID
+        var oUl = document.getElementById("linksInGuide");
+        // 获取span ID
+        var caution = document.getElementById("caution");
+        //获取ul 所有孩子
+        var aLi = oUl.children;
+        //定时器管理
+        var timer = null;
+        //缓动
+        var leader = 0;
+        var target = 0;
+        for(var i = 0;i<aLi.length;i++){
+        //鼠标移动
+            aLi[i].onmouseover = function(){
+            //关闭定时器
+                clearInterval(timer);
+                //获取当前的left值
+                target = this.offsetLeft;
+                //开启定时器
+                timer = setInterval(autoCaution,20);   
+            }
+            //鼠标点击
+            aLi[i].onmousedown = function(){
+      //清楚所有高亮的文字
+      for(var j = 0;j<aLi.length;j++){
+       aLi[j].style.color = "#fff"; 
+      }
+      //当前点击栏变为红色
+      this.style.color = "#ccc";
+      //提示框
+      current = this.offsetLeft;
+      caution.style.left = current+"px";      
+     }
+   }
+
+   //缓动动画
+   function autoCaution(){   
+   leader = leader +(target - leader) /10 - 2.45;
+   caution.style.left = leader+"px";
+   }
+   }
+              </script>
+        </div>
+    </div>
+
+
+    <div class="boxoftx">
+        <div align= "center">
+            <img class="center txcircle" src = 'img/tx.gif' width = '120px' height = '120px'>
+        </div>
+        <div>
+            <p class="center red large" id="change"> 警告 Warnings </p>
+        </div>
+    </div>
+    
+    <!--头像后的模糊块-->
+    <div class="boxofwarning" align="center">
+        <div class="board">
+            <div class="blur"></div>
+        </div> 
+    </div> 
+
+    <!--分割线-->
+    <div align="center">
+        <p class="line"></p>
+    </div>
+    
+    <!--引言-->
+    <div class="introInHome" align="center">
+        <div class="leadin">
+            <p class="intro-title">引子</p>
+            <p class="intro" align="left">暮春，夕阳西下，天边的血上飘过几缕白纱</p>
+            <p class="intro" align="left">微风轻拂水面，阵阵涟漪</p>
+            <p class="intro" align="left">祂探出了头，缓缓的</p>
+            <p class="intro" align="left">落日撒下最后一抹余辉。在那橙红海中，有一位<b>branchiostoma</b>藏在光芒之后，隐去了祂透明的身体</p>
+            <p class="intro" align="left">千万年前，祂在这里诞生；千万年中，祂渐渐变为了亿万生灵；千万年后，祂仍在这里</p>
+            <p class="intro" align="left">不过，祂已悄然躲到幕后，不再是主角</p>
+            <p class="intro" align="left">当少年终于转身看向落日下的水面时，那<b>branchiostoma</b>已经无迹，如同叶片藏入了枯枝落叶</p>
+            <p class="intro" align="left">“终是曲终人散，冷冷清清”</p>
+            <p class="intro" align="left">他抱怨着。</p>
+
+        </div>
+    </div>
+
+    <!--几个子页面的跳转链接-->
+    <div class="boxoflink">
+        <div class="glm">
+            <a href="子页面/introduction.html">
+                <div class="glass">    
+                    <p class="white subtitle">介绍</p >
+                </div>
+            </a>
+            <a href="子页面/articles.html">
+                <div class="glass">    
+                    <p class="white subtitle">文章</p >
+                </div>
+            <a href="子页面/album.html">
+                <div class="glass">    
+                    <p class="white subtitle">相册</p >
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!--底栏-->
+    <div class = 'footer'>
+        <div class="nameInFooter">
+          <a class="gray"><b>烧鱼君</b></a>
+        </div>
+        <div class="linksInFooter">
+            <a class="gray small space" href="更新日志.txt">更新，更进一步</a>
+            <a class="gray small space" href="https://pkuschool.github.io/SubIT/index.html">技术支持</a>
+            <a class="gray small space" href="子页面/about.html">关于</a>
+        </div>
+        <div class="linksInFooter">
+            <a class="gray small space" 
+            onclick="alert('内容基于cc0协议开源')">版权声明</a>
+            <a class="gray small space" 
+            href = '子页面/egg.html'>彩蛋</a>
+        </div>
+    </div>
+</body>
+</html>

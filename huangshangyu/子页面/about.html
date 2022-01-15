@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章</title>
+<style type="text/css">
+	body{
+		background: url("../background.png") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -o-background-size: cover;                
+        background-size: cover;
+        padding:0px;
+        margin: 0px;
+	}
+    .solid{
+        border-style: solid;
+        color: white;
+    }
+    a{
+        text-decoration:none
+    }
+    a.small:hover{
+        color:rgb(224, 224, 224);
+    }
+
+</style>
+<link rel="stylesheet" href="../style/mainstyle.css"> <!--全局样式-->
+</head>
+<body class = 'background'>
+         <!--顶栏-->
+         <div class = 'guide'>
+            <!--头像-->
+            <div href="img/tx.gif" class="name heading">
+                <img class="txcircle " 
+                    src = '../img/tx.gif' 
+                    width = '30px' height = '30px' 
+                />
+            </div>
+            <!--名字和链接-->
+            <div class="linksInGuide">
+                <div class="white name">
+                    <b>烧鱼君</b>
+                </div>
+                <span id="caution"></span>
+                <div class="name linksInGuide2" id='linksInGuide'>
+                    <a class="gray name small home" href="../index.htm">主页</a>
+                    <a class="gray name small home" href="introduction.html">介绍</a>
+                    <a class="gray name small home" href="articles.html">文章</a>
+                    <a class="gray name small home" href="album.html">相册</a>
+                </div>
+                <script type="text/javascript">
+        window.onload = function(){
+            //获取ul ID
+            var oUl = document.getElementById("linksInGuide");
+            // 获取span ID
+            var caution = document.getElementById("caution");
+            //获取ul 所有孩子
+            var aLi = oUl.children;
+            //定时器管理
+            var timer = null;
+            //缓动
+            var leader = 0;
+            var target = 0;
+            for(var i = 0;i<aLi.length;i++){
+            //鼠标移动
+                aLi[i].onmouseover = function(){
+                //关闭定时器
+                    clearInterval(timer);
+                    //获取当前的left值
+                    target = this.offsetLeft;
+                    //开启定时器
+                    timer = setInterval(autoCaution,20);   
+                }
+                //鼠标点击
+                aLi[i].onmousedown = function(){
+          //清楚所有高亮的文字
+          for(var j = 0;j<aLi.length;j++){
+           aLi[j].style.color = "#fff"; 
+          }
+          //当前点击栏变为红色
+          this.style.color = "#ccc";
+          //提示框
+          current = this.offsetLeft;
+          caution.style.left = current+"px";      
+         }
+       }
+    
+       //缓动动画
+       function autoCaution(){   
+       leader = leader +(target - leader) /10 - 2.45;
+       caution.style.left = leader+"px";
+       }
+       }
+                  </script>
+            </div>
+        </div>
+    <br/>
+    <br/>
+    <h1 class="left1 white" align="center">
+        
+    </h1>
+    <div class="boxarticles" align="center">
+        <div class="leadin">
+            <p class="intro-title">关于</p>
+            <p class="intro" align="left">这个网页由<b>烧鱼君</b>撰写</p>
+            <p class="intro" align="left">若不特别声明，本网站中的一切元素符合cc0协议开源</p>
+            <p class="intro" align="left">感谢zyz porrima提供了网页架构</p>
+            <p class="intro" align="left"></p>
+            <p class="intro" align="left"></p>
+            <p class="intro" align="left"></p>
+            <p class="intro" align="left"></p>
+            <p class="intro" align="left"></p>
+            <p class="intro" align="left"></p>
+
+        </div>
+    </div>
+    <div class = 'footer'>
+        <div class="nameInFooter">
+          <a class="gray"><b>烧鱼君</b></a>
+        </div>
+        <div class="linksInFooter">
+            <a class="gray small space" href="更新日志.txt">更新，更进一步</a>
+            <a class="gray small space" href="https://pkuschool.github.io/SubIT/index.html">技术支持</a>
+            <a class="gray small space" href="about.html">关于</a>
+        </div>
+        <div class="linksInFooter">
+            <a class="gray small space" 
+            onclick="alert('免费开源，欢迎白嫖')">版权声明</a>
+            <a class="gray small space" 
+            href = 'egg.html'>彩蛋</a>
+        </div>
+          
+      </div>
+</body>
+</html>

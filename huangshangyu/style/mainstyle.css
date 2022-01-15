@@ -1,0 +1,290 @@
+
+
+
+/*盒子*/
+/*用来装主要链接元素*/
+.boxoflink{
+    position: relative;
+    top: -100px;
+    margin-bottom: 0;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 0px;
+}
+
+/*用来装头像后的那个模糊框*/
+.boxofwarning{
+    position: relative;
+    top: -350px;
+    margin-top: 200px;
+    padding: 0px;
+    z-index: -1;
+}
+
+/*用来装头像*/
+.boxoftx{
+    margin-top: 60px;
+    padding: 0px;
+}
+
+/*导航栏中用于装文字和头像*/
+.linksInGuide{
+    padding-left: 60px;
+    padding-top: 20px;
+    margin:0;
+    justify-content: flex-start;
+    align-items: space-around;
+}
+/*导航栏中的链接*/
+.linksInGuide2{
+    margin-left: 50px;
+    padding-right: 200px;
+}
+/*底栏上的名字*/
+div.nameInFooter{
+    width: 49%;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 40px;
+}
+/*底栏上的链接*/
+div.linksInFooter{
+    position: relative;
+    top:-20px;
+    width: 49%;
+    margin-top: 2px;
+    margin-left: 250px;
+    margin-right: 100px;
+    display: block;
+}
+
+/*用于装引子*/
+.introInHome{
+    position:relative;
+    top:-160px;
+    padding:20px;
+}
+
+/*用于装图像轮播模块（album.html）*/
+.imgContainer{
+    margin-top: 50px;
+    margin-left: 30%;
+    overflow: hidden;
+}
+
+/*用于装个人介绍（introduction.html）*/
+.introInIntro{
+    position:relative;
+    top:60px;
+    padding:20px;
+    margin-bottom: 60px;
+}
+
+/*用于装文章（article.html）*/
+.atcInAtc{
+    position:relative;
+    top:0px;
+    padding:20px;
+}
+
+.box-about{
+    padding-left: 30%;
+    padding-right: 30%;
+    margin: 5px;
+}
+.bordintro{
+    margin: 5px;
+    display: inline;
+    color: rgb(155, 153, 153);;
+}
+
+
+
+/*底栏*/
+/*把底栏放到页面的最下方，随页面移动*/
+.footer{
+    background-color: rgba(9, 10, 14, 0.993);
+    position:relative;
+    left:0px;
+    bottom:0%;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+
+/*链接的排列*/
+a.space{
+    margin-left:30px;
+    margin-right:30px;
+    display: inline;
+}
+
+
+/*阴影、圆角矩形*/
+/*所有的a元素容器*/
+div.glm{
+    display: flex;
+    justify-content: space-around;
+}
+/*模糊效果的div*/
+div.glass{
+    /*实现模糊效果*/
+    background: inherit;
+    backdrop-filter: brightness(20%);
+    background-color: rgba(192, 222, 243, 0.082);
+    /*圆角矩形*/
+    border-radius: 10px;
+    /*元素大小*/
+    height: 180px;
+    width: 180px;
+    /*使得a元素居中*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*定位*/
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: box-shadow 100ms;
+}
+
+/*头像下面那块模糊的属性*/
+div.board{
+    /*模糊效果*/
+    background: inherit;
+    backdrop-filter: brightness(20%);
+    background-color: rgba(192, 222, 243, 0.082);
+    /*元素居中*/
+    align-items: center;
+    /*元素大小*/
+    width: 700px;
+    height: 350px;
+    /*圆角矩形*/
+    border-radius: 10px;
+    
+}
+
+/*鼠标悬停效果*/
+div.glass:hover{
+    box-shadow: inset 0 0 0 200px rgba(192, 222, 243, 0.151);  
+}
+
+/*引子的属性*/
+div.leadin{
+    /*模糊效果*/
+    background: inherit;
+    backdrop-filter: brightness(20%);
+    background-color: rgba(164, 190, 209, 0.164);
+    border-radius: 10px;
+    /*高度、宽度*/
+    height: 600px;
+    width: 600px;
+    /*排列*/
+    display:block;
+    align-content: flex-start;
+    /*定位*/
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding:40px;
+}
+
+/*顶栏*/
+
+.guide{
+    background-color: rgba(9, 10, 14, 0.822);
+    position:sticky;/*顶栏锁定在页面上方*/
+    left:0px;
+    top:0%;
+    width: 100%;
+    height: 60px;
+    z-index:100 ;
+    
+}
+
+.name{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline;/*使得顶栏上的元素横向排列*/
+}
+
+#caution {
+    width: 70px;
+    height: 60px;
+    background-color: #005983;
+    position: absolute;
+    top: 0;
+    left: 12.5%;
+    z-index: -1;
+}
+
+/*我是华丽的分割线*/
+/*分割线*/
+.line{
+    position: relative;
+    top: -220px;
+    height:1px;
+    width:800px;
+    border-top :2px solid  rgb(224, 224, 224);
+}
+
+/*p元素的属性*/
+.intro{
+    font-size: 19px;
+    color: rgb(224, 224, 224);
+}
+.intro-title{
+    font-size: 25px;
+    color: rgb(224, 224, 224);
+    font-style: italic;
+}
+.subtitle{
+    font-size: 30px;
+}
+.center
+{
+    text-align: center; /*居中*/
+    margin-top: 30px;
+}
+/*调节字体大小*/
+.large{
+    font-size: 42px;
+}
+.small{
+    font-size: 5px;
+}
+.white
+{
+    color: rgb(224, 224, 224);
+
+}
+.colour
+{
+    color: rgb(139, 169, 190);
+}
+.gray
+{
+    color: rgb(155, 153, 153);
+}
+.red{
+    color:rgba(255, 61, 61, 0.856)
+}
+
+/*头像*/
+
+/*圆形边框*/
+.txcircle{
+    border-radius:50%;
+    border: 3px solid rgb(192, 205, 209);
+    opacity:0.9
+}
+
+/*用于确定位置*/
+.heading{
+    position: absolute;
+    margin-top: 10px;
+    margin-left:10px;
+}

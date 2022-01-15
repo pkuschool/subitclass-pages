@@ -1,0 +1,32 @@
+@media (prefers-color-scheme: dark) {
+
+}
+@media (prefers-color-scheme: light) {
+}
+.bk-light{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+.bk-dark>ul{
+    list-style-type: "\→";
+}
+.bk-dark{
+    width: 100vw;
+    /*height: 200vh;*/
+    background-color: black;
+    color: white;
+}
+/*
+.parallax {
+    height: 600px;
+    position: relative;
+}
+.parallax>img,.parallax>div>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+*/

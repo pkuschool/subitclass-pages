@@ -1,0 +1,86 @@
+@media (prefers-color-scheme: dark) {
+    .contact-list,#contact-card{
+        background-color: rgba(177, 177, 177, 0.3);
+    }
+    #contact-card div a{
+        color: white;
+        background-color: rgba(0, 0, 0,0.8)
+    }
+    #contact-card div a:hover{
+        background-color: rgba(77, 77, 77, 0.8);
+    }
+}
+@media (prefers-color-scheme: light) {
+    .contact-list,#contact-card{
+        background-color: rgba(131, 131, 131, 0.5);
+    }
+    #contact-card div a{
+        color: black;
+        background-color: rgba(233,233,233,0.8);
+    }
+    #contact-card div a:hover{
+        background-color:rgba(177, 177, 177,1);
+    }
+}
+/*
+.list-btn{
+    width: 5vw;
+    height: 3vw;
+    font-size: 1em;
+}*/
+#Wechat,#Office365,#Yammer{
+    text-align: center;
+    margin: 20px;
+    height: 70px;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    -webkit-transition-property: background-color; /* Safari */
+    -webkit-transition-duration: 0.3s; /* Safari  */
+}
+#Wechat:hover,#Office365:hover,#Yammer:hover{
+    cursor: pointer;
+    background-color: rgba(199,199,199,0.8);
+}
+#Wechat>p,#Office365>p,#Yammer>p{
+    margin: 0;
+    padding: 20px;
+}
+.contact-list{
+    margin: none;
+}
+.contact-list>button{
+    font-size: 20px;
+}
+#contact-card{
+    overflow:scroll;   
+    width: 30vw;
+    min-width: 360px;
+    /*padding: 2vh 2.5vw 10vh 2.5vw;*/
+}
+
+#contact-card a{
+    border: solid rgba(133, 133, 133, 1) 1px;
+    border-style: dashed;
+
+    text-decoration: none;
+    overflow:scroll;
+    padding: 0.5em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 3px;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    -webkit-transition-property: opacity; /* Safari */
+    -webkit-transition-duration: 0.3s; /* Safari  */
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    -webkit-transition-property: background-color; /* Safari */
+    -webkit-transition-duration: 0.3s; /* Safari  */
+}
+#contact-card a:hover{
+    border: solid rgb(133, 133, 133) 1px;
+    box-shadow: 
+        0 1.6px 3.6px 0 rgba(0, 0, 0, .132),
+        0 0.3px 0.9px 0 rgba(0, 0, 0, .108); 
+    opacity: 0.8;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
+        <link rel="stylesheet" type="text/css" href="./css/version-history.css">
+        <script type="text/javascript" src="./js/parralax.js"></script>
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
+        <title>呐呐~</title>
+    </head>
+    <noscript>
+        <div style="background-color: white;width: 100vw;font-size: x-large;text-align: center;height: 100px;">
+            请开启JavaScript
+        </div>
+    </noscript>
+    <body id="site-default"><!--style="background-image: none; background:none">--> 
+    <div id="site-background"style="height:2000px;">
+        <div class="head_block" style="min-width: 750px;"></div>
+        <nav class="header" style="min-width: 750px;">
+            <script type="text/javascript" src="./js/header.js"></script>
+            <script>
+                    $(document).ready(function(){
+                        $("nav>ul>li").mouseenter(function(){
+                            $(".head_block").stop().slideDown(200);
+                            $("nav>ul>li>ul").stop().slideDown(200);
+                        });
+                        $("nav>ul>li").mouseleave(function(){
+                            $(".head_block").stop().slideUp(200);
+                            $("nav>ul>li>ul").stop().slideUp(200);
+                        });
+                    });
+            </script>
+        </nav>
+        <div style="flex-direction: column; padding-left: 30px;">
+            <div id="V1_0_0" style="padding-top: 10vh;"><!--class="bk-dark parallax;"-->
+                <h1 style="margin:0;">V1.0.0(初版)</h1>
+                <!-- <img src="./src/V1_index.png" style="width: 50%; margin: 0 2.5%; background-attachment: fixed;"> -->
+                <p>总代码量（行）：CSS:118 HTML:142 SUM:271</p>
+            </div>
+            <div style="height:1800px;"><!--class="bk-dark parallax"-->
+                <h1 style="margin-top: 0;">V1.0.1</h1>
+                <ul>
+                    <li>1.页面完善+优化</li>
+                    <li>1.1文本居中</li>
+                    <li>1.2使用flex-box</li>
+                    <li>2.更新了黑暗模式</li>
+                    <li>3.添加了新效果：黑幕(就是这个：<span class="heimu" title="你知道的太多了">咕咕咕</span>)</li>
+                </ul>
+                <!-- <img src="./src/V2_index_darkmode.png" style="width: 50%; margin: 0 2.5%;">
+                <img src="./src/V2_writer's-word_darkmode.png" style="width: 50%; margin: 0 2.5%;"> -->
+                <h1 id="V1_1_0">V1.1.0</h1>
+                <ul>
+                    <li>1.页面重构+优化</li>
+                    <li>1.1.顶栏修改</li>
+                    <li>1.2.添加“卡片”（flex-box嵌套）</li>
+                    <li>1.3.添加阴影</li>
+                    <li>2.添加“版本更新历史”页面（就是本页面） </li>
+                    <li>3.删除“成就”页面（因为没什么作用，所以被“版本更新历史”页面替代）</li>
+                    <p>总代码量（行）：CSS:259 HTML:217 SUM:476</p>
+                </ul>  
+                <h1>V1.1.1_demo</h1>
+                <ul>
+                    <li>1.一个没有什么用的版本，是1.1.0与1.2.0的过渡版本</li>
+                </ul> 
+                  <h1 id="V1_2_0">V1.2.0(#RC_pre)</h1>   
+                <ul>
+                    <li>1.页面完善+优化</li>
+                    <li>2.“联系方式”页面删除，合并到“自我介绍”页面中</li>
+                    <li>3.顶栏重构</li>
+                    <li>3.1.顶栏字体大小修改</li>
+                    <li>3.2.顶栏动画</li>
+                    <li>4.添加底栏</li>
+                    <li>5.页面跳转逻辑完善</li> 
+                    <li>6.版本号修正</li>
+                </ul>  
+                <h1>V1.2.1_(#RC_pre)</h1>   
+                <ul>
+                    <li>1.修复了一些问题</li> 
+                    <span class="heimu" title="你知道的太多了">(指添加了charset="utf-8")</span>   
+                    <li>2.添加了一点东西</li>
+                </ul>  
+                <h1>V1.2.2_(#RC)</h1>
+                <ul>
+                    <li>1.“版本历史”更名为“更新日志”</li>
+                    <li>2.“联系方式”改进</li>
+                    <li>3.V1.1.1_demo加入到“更新日志中”</li>
+                    <li>4.顶栏修改</li>
+                    <li>5.添加了一篇文章</li>
+                </ul>
+                <h1>V1.2.3_(#RC)</h1>
+                <ul>
+                    <li>1.修复了一些问题</li>
+                    <span class="heimu" title="你知道的太多了">好耶，又水了一个版本</span>
+                </ul>
+                <p>总代码量（行）：CSS:479 HTML:477 JavaScript:99 SVG:1 SUM:1056</p>
+                <h1>V1.2.4</h1>
+                <ul>
+                    <li>1.页面完善+优化</li>
+                    <li>2.顶栏逻辑修改</li>
+                    <li>3.添加了搜索框(支持站内搜索以及站外搜索)</li>
+                    <li>4.添加了一篇文章</li>
+                </ul>
+                <p>总代码量（行）：CSS:634 HTML:641 JavaScript:201 SVG:1 SUM:1477</p>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>©Copyright 2021 Wei Zifeng 保留所有权利</p>
+            <a href="../writer's-more.html">彩蛋</a>
+            <p>powered by <a href="https://code.visualstudio.com">Visual Studio Code</a></p>
+        </footer>
+    </div>
+    </body>
+</html>

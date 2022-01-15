@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <title>呐~</title>
+    </head>
+    <noscript>
+        <div style="background-color: white;width: 100vw;font-size: x-large;text-align: center;height: 100px;">
+            请开启JavaScript
+        </div>
+    </noscript>
+    <body id="site-default">
+    <div id="site-background" style="height: 1000px;">
+        <div class="head_block"></div>
+        <nav class="header">
+            <script type="text/javascript" src="./header_sub.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $("nav>ul>li").mouseenter(function(){
+                        $(".head_block").stop().slideDown(200);
+                        $("nav>ul>li>ul").stop().slideDown(200);
+                    });
+                    $("nav>ul>li").mouseleave(function(){
+                        $(".head_block").stop().slideUp(200);
+                        $("nav>ul>li>ul").stop().slideUp(200);
+                    });
+                });
+            </script>
+        </nav>
+        <div style="padding-left: 20px;padding-top: 5vh;">
+            <h1>关于电脑硬件</h1>
+            <p>其实这篇文章我也想像“关于代码”那篇文章一样写一写我与Hardware/Software的缘起</p>
+            <p>但奈何时间不够，所以我这里列举几个硬件规格:</p>
+            <p>AMD锐龙5000系列CPU:</p>
+            <table style="border:0;">
+                <tr>
+                    <th></th>
+                    <th>核心/线程</th>
+                    <th>TDP</th>
+                    <th>基频/最大睿频</th>
+                    <th>首发价格(USD)</th>
+                </tr>
+                <tr>
+                    <td>Ryzen5 5600X</td>
+                    <td>6C/12T</td>
+                    <td>65W</td>
+                    <td>3.7Ghz/4.6Ghz</td>
+                    <td>299</td>
+                </tr>
+                <tr>
+                    <td>Ryzen7 5800X</td>
+                    <td>8C/16T</td>
+                    <td>105W</td>
+                    <td>3.8Ghz/4.7Ghz</td>
+                    <td>449</td>
+                </tr>
+                <tr>
+                    <td>Ryzen9 5900X</td>
+                    <td>12C/24T</td>
+                    <td>105W</td>
+                    <td>3.7Ghz/4.8Ghz</td>
+                    <td>549</td>
+                </tr>
+                <tr>
+                    <td>Ryzen9 5950X</td>
+                    <td>16C/32T</td>
+                    <td>105W</td>
+                    <td>3.4Ghz/3.9Ghz</td>
+                    <td>799</td>
+                </tr>
+            </table>
+            <br>
+            <p>Intel酷睿11代CPU:</p>
+            <table style="border:0;">
+                <tr>
+                    <th></th>
+                    <th>核心/线程</th>
+                    <th>TDP</th>
+                    <th>基频/最大睿频</th>
+                </tr>
+                <tr>
+                    <td>i5 11600K</td>
+                    <td>6C/12T</td>
+                    <td>125W</td>
+                    <td>3.9Ghz/4.9Ghz</td>
+                </tr>
+                <tr>
+                    <td>i7 11700K</td>
+                    <td>8C/16T</td>
+                    <td>125W</td>
+                    <td>3.6Ghz/5.0Ghz</td>
+                </tr>
+                <tr>
+                    <td>i9 11900K</td>
+                    <td>8C/16T</td>
+                    <td>125W</td>
+                    <td>3.5Ghz/5.1Ghz</td>
+                </tr>
+                <tr>
+                    <td>i9 12900K(凑个数）</td>
+                    <td>16C(8P+8E)/24T</td>
+                    <td>125W/241W</td>
+                    <td>(3.2Ghz/2.4Ghz)/(5.2Ghz/3.9Ghz)</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>©Copyright 2021 Wei Zifeng</p>
+        <p>powered by <a href="https://code.visualstudio.com">Visual Studio Code</a></p>
+    </footer>
+    </body>
+</html>
