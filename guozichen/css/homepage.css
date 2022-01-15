@@ -1,0 +1,131 @@
+/*字体设置*/
+
+@font-face {
+    font-family:"HYWH-65W";
+    src: url("../font/HYWenHei-65W.ttf");
+}
+
+@font-face {
+    font-family: "HYWH-85W";
+    src: url("../font/HYWenHei-85W.ttf");
+}
+
+/* body 背景图片 */
+
+body{
+    margin: 0;
+    padding: 0;
+
+    background-color: #ccc;
+    background-image: url("../img/background.png");
+    background-size:cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* 标题栏及标签 */
+
+header{
+    user-select: none;
+    height:100px;
+    background-color: rgba(255, 255, 255, .5);
+    flex-shrink: 0;
+
+    backdrop-filter: blur(3px);
+    border-left: 2px solid rgba(255, 255, 255, .5);
+    border-top: 2px solid rgba(255, 255, 255, .5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
+
+}
+
+nav{
+    height:100px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: "HYWH-85W";
+    font-size: 30px;
+    color:#fff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, .2);
+
+    opacity: 1;
+    padding: 25px 30px;
+    margin: 0px 40px;
+}
+
+nav a:hover{/*鼠标放上去的动画 换背景透明色+字体颜色*/
+    color:tomato;
+    text-shadow: 3px 3px 6px rgba(255,99,71,.7);
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+}
+
+/* 时间提醒 */
+
+div.alarm{
+    width: 800px;
+    height: 450px;
+    margin:100px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    border-left: 2px solid rgba(255, 255, 255, .5);
+    border-top: 2px solid rgba(255, 255, 255, .5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
+
+    font-family: "HYWH-85W";
+    font-size: 40px;
+    color:#fff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, .2);
+
+    text-align: center;
+}
+
+/* 链接 */
+
+footer{
+    width:100vw;
+
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    border-left: 2px solid rgba(255, 255, 255, .5);
+    border-top: 2px solid rgba(255, 255, 255, .5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
+
+    text-align: center;
+
+    text-decoration: none;
+    font-family: "HYWH-85W";
+    /* font-size: 40px; */
+    color:#fff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, .2);
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: start;
+
+}
+
+ul footer div{
+    list-style: none
+}
+
+div footer{
+    margin: 10px;
+}
+
