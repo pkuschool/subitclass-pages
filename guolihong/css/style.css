@@ -1,0 +1,273 @@
+/* CSS Document */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-size: 14px;
+	background: url(../images/bg.jpg) no-repeat top center;
+	background-size: cover;
+}
+
+.clear {
+	font-size: 0px;
+	clear: both;
+	line-height: 0px;
+	height: 1px;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {
+	min-height: 1px;
+}
+
+a {
+	color: #373637;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.fl {
+	float: left
+}
+
+.fr {
+	float: right
+}
+
+.al {
+	text-align: left
+}
+
+.ac {
+	text-align: center
+}
+
+.ar {
+	text-align: right
+}
+
+img {
+	border: none;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+header {
+	background: #00668E;
+}
+
+nav {
+	width: 960px;
+	padding: 20px 0px;
+	margin: auto;
+	font-size: 20px;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav span {
+	display: inline-block;
+	text-align: center;
+}
+
+nav a {
+	color: #fff;
+}
+
+nav span a:hover {
+	color: #eee;
+}
+
+.content {
+	width: 960px;
+	margin: auto;
+}
+
+.top {
+	padding: 90px 0 30px
+}
+
+.top .me {
+	width: 400px;
+}
+
+.top .txt img {
+	border-radius: 50%;
+}
+
+.top .txt p {
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	padding-top: 20px;
+}
+
+.content .pic {
+	position: relative;
+	padding: 150px 0;
+}
+
+.content img:hover {
+	opacity: 0.75;
+}
+
+.content .about {
+	background: #f1e5f8;
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -250px;
+}
+
+.content .about .a-top {
+	padding-top: 100px;
+}
+
+.content .about .a-pic {
+	padding-left: 100px;
+}
+
+.content .about .a-txt {
+	width: 220px;
+}
+
+.content .about-me {
+	padding: 50px;
+}
+
+.content .c-l {
+	width: 250px;
+	float: left;
+}
+
+.content .c-l ul li {
+	margin-bottom: 50px;
+}
+
+.content .c-r {
+	width: 525px;
+	float: right;
+}
+
+.content .h-top .h-l {
+	width: 450px;
+	float: left;
+}
+
+.content .h-top .h-r {
+	width: 510px;
+	float: right;
+	padding-top: 100px;
+}
+
+.content .contact {
+	background: #f1e5f8;
+	width: 520px;
+	position: absolute;
+	padding: 80px;
+	left: 50%;
+	margin-left: -340px;
+	top: 120px;
+	border-radius: 50px;
+	font-size: 20px;
+}
+
+.content .contact p {
+	padding: 10px 0;
+	line-height: 180%;
+}
+
+.cj {
+	padding: 100px 0;
+	background: #f1e5f8;
+}
+
+.erweima {
+	position: absolute;
+	right: -50px;
+	bottom: -50px;
+}
+
+.min-h6 {
+	min-height: 800px;
+}
+
+.thank {
+	border: 2px solid #EEEEEE;
+	padding: 30px;
+	border-radius: 10px;
+	margin: 50px;
+	color: #eee;
+	font-size: 16px;
+	text-indent: 2em;
+	line-height: 200%;
+}
+
+.gray {
+	color: #eee;
+	padding-top: 10px;
+}
+
+.bg1 {
+	background: #FCF9EF
+}
+
+.bg2 {
+	background: #FBCEBD
+}
+
+.bg3 {
+	background: #8AD7BD
+}
+
+.list {
+	border: 2px solid #EEEEEE;
+	padding: 30px;
+	border-radius: 10px;
+	margin: 50px;
+	color: #333;
+	font-size: 16px;
+	text-indent: 2em;
+	line-height: 200%;
+}
+
+.list h2 {
+	padding-bottom: 15px;
+}
+
+.list p {
+	line-height: 180%;
+}
+
+.p10 {
+	padding-bottom: 10px;
+}
+
+footer {
+	background: #00668E;
+	text-align: center;
+	line-height: 76px;
+	color: #fff;
+	text-align: center;
+	font-size: 16px;
+}

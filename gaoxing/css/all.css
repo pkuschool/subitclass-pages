@@ -4,6 +4,9 @@ body{
 html{
     scroll-behavior: smooth;
 }
+/* html::-webkit-scrollbar{
+    width: 0px;
+} */
 h1{
     color:rgb(69, 128, 196);
     font-weight: bold;
@@ -133,16 +136,10 @@ a{
 }
 .goto3{
     border-radius: 2px;
-    height: 40px;
-    width: 100px;
-    border: 2px solid rgb(70, 222, 222);
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    font-size: 17px;
-    opacity: 0;
 }
 div.link1{
     display: flex;
@@ -150,6 +147,7 @@ div.link1{
     align-items: center;
     background-color:rgb(245, 245, 245);
     border: 1px solid black;
+    width: 481px;
 }
 div.goto2:hover{
     background-color: rgb(238,238,238);
@@ -164,6 +162,7 @@ div.goto2:hover{
     transform: none;
     opacity: 1;
     right: 230px;
+    transition: .4s;
 }
 div.arrow{
     border-top: 2px solid black;

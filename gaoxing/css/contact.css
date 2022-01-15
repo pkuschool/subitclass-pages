@@ -6,9 +6,10 @@ div.box2{
 div.box3{
     border: 1px solid black;
     width: 230px;
-    height: 200px;
-    padding: 10px;
-    background-color: #b0c4de;
+    height: 230px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #bbcce2;
 }
 img{
     width: 200px; 
