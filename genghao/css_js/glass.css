@@ -1,0 +1,122 @@
+div.glm{
+    display: flex;
+    justify-content: space-around;
+    }
+div.glass{
+    background: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(211, 217, 221, 0.589);
+    border-radius: 5px;
+    height: 92px;
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    }
+div.first{
+    background: inherit ;
+    align-items: center;
+    position: relative;
+    backdrop-filter: blur(10px);
+    background-color: rgba(195, 204, 199, 0.603);
+    top: auto;
+    width: 800px;
+    height: 494px;
+    border-radius: 100px;
+    
+}
+
+div.glass:hover{
+    box-shadow: inset 0 0 0 200px rgba(44, 51, 47, 0.411);  
+}
+div.passage1{
+    background: inherit;
+    backdrop-filter: blur(20px);
+    background-color: rgba(158, 179, 167, 0.377);
+    border-radius: 10px;
+    height: 750px;
+    width: 350px;
+    display:block;
+    align-content: flex-start;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding:40px;
+}
+div.passage2{
+    background: inherit;
+    backdrop-filter: blur(20px);
+    background-color: rgba(158, 179, 167, 0.377);
+    border-radius: 10px;
+    height: 750px;
+    width: 350px;
+    display:block;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding:40px;
+}
+div.passage3{
+    background: inherit;
+    backdrop-filter: blur(20px);
+    background-color: rgba(158, 179, 167, 0.377);
+    border-radius: 10px;
+    height: 400px;
+    width: 700px;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding:40px;
+}
+div.passage4{
+    background: inherit;
+    backdrop-filter: blur(20px);
+    background-color: rgba(158, 179, 167, 0.377);
+    border-radius: 10px;
+    height: 1800px;
+    width: 700px;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding:40px;
+}
+div.passage5{
+    background: inherit;
+    backdrop-filter: blur(20px);
+    background-color: rgba(158, 179, 167, 0.377);
+    border-radius: 10px;
+    height: 600px;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding:40px;
+}
+div.passage6{
+    background: inherit;
+    backdrop-filter: blur(20px);
+    background-color: rgba(158, 179, 167, 0.377);
+    border-radius: 10px;
+    height: 600px;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding:40px;
+}
+div.passage7{
+    border-top: 2px solid rgb(127, 90, 177);
+    background: inherit;
+    backdrop-filter: blur(20px);
+    background-color: rgba(158, 179, 167, 0.377);
+    border-radius: 10px;
+    width: 930px;
+    height: 500px;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding:40px;
+}
