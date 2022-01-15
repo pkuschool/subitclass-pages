@@ -52,8 +52,8 @@ function Search(){
     if(InSite==false)
     {
         Modal.innerHTML =
-        `<ion-icon name="close-circle-outline" style="right: 5px;top:5px;" onclick="CloseModal();"></ion-icon>`+
-        `<iframe src="`+`https://cn.bing.com/search?q=`+TXT+`" style="width:100%;height:500px;margin-top:20px">
+        `<ion-icon name="close-circle-outline" onclick="CloseModal();" id="icon" style="right:20px;"></ion-icon>`+
+        `<iframe src="`+`https://cn.bing.com/search?q=`+TXT+`" style="width:100%;height:500px;margin-top:50px">
          </iframe>`;     
     }
     else{
@@ -68,7 +68,7 @@ function Search(){
         else{
             $(Modal).css('display','block');
             Modal.innerHTML =
-            `<ion-icon name="close-circle-outline" style="right: 5px;top:5px;" onclick="CloseModal();"></ion-icon>`+
+            `<ion-icon name="close-circle-outline" onclick="CloseModal();" id="icon" style="right:20px;"></ion-icon>`+
             `<p>未找到您搜索的页面</p>`;                   
         }
     }

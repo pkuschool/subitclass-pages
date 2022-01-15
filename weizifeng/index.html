@@ -31,18 +31,6 @@
             });
             </script>
         </nav>
-        <!-- <div style="display:flex;margin-left: 600px;"> 
-            <div onclick="ChangeSearchMode(true);" id="csmin" style="right: 100px;">站内搜索</div>
-            <div onclick="ChangeSearchMode(false);" id="csmout">站外搜索</div>
-            <div id="SearchBox">
-                <input type="text" placeholder="Search any thing you want" id="SearchText">
-                <ion-icon name="search-outline" onclick="Search()"></ion-icon>
-            </div>
-            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-            <script type="text/javascript" src="./js/SearchModeButton.js"></script>
-            <script type="text/javascript" src="./js/search.js"></script>
-        </div> -->
         <div style="padding-left: 650px;display: inline-flex;">
             <div onclick="ChangeSearchMode(true);" id="csmin">站内搜索</div>
             <div onclick="ChangeSearchMode(false);" id="csmout">站外搜索</div>
@@ -81,7 +69,7 @@
             const modal = document.getElementById("modal");
             modal.innerHTML = `
             <modal>
-            <h1>注意！您显示宽度小于750像素</h1>
+            <h1>注意！您显示宽度小于1200像素</h1>
             </modal>
             `;
         }
