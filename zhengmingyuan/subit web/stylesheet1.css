@@ -1,0 +1,17 @@
+p{
+    font-size:50px;
+    color: palevioletred;
+}
+body{
+    background-color:beige;
+    border: medium dotted saddlebrown;
+    border-width: 10px;
+}
+
+img{
+    width:120px;
+    background-color:rosybrown;
+    display: block;
+    border: medium dotted saddlebrown;
+    border-width: 5px;
+}

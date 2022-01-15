@@ -1,0 +1,1 @@
+window.alert('Be careful! You just clicked into this blog and wake up the beast!')
